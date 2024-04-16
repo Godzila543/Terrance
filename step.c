@@ -89,7 +89,7 @@ int main(void)
         }
 
         // Stay high for 400 us
-        gpioDelay(400);
+        gpioDelay(800);
 
         // Unpulse
         gpioWrite(pin1, 0);
@@ -98,6 +98,6 @@ int main(void)
         gpioWrite(pin4, 0);
 
         // Stay low for 400 us
-        gpioDelay(400);
+        gpioDelay(800);
     }
 }
