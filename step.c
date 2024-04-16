@@ -21,6 +21,9 @@ void setup(int *periods)
     periods[2] = 10.0E6 / (rpm_3 * 200.0 / 60.0);
     periods[3] = 10.0E6 / (rpm_4 * 200.0 / 60.0);
 
+    // Initialize GPIOs
+    gpioInitialise();
+
     // Set GPIOs as outputs
     gpioSetMode(pin1, PI_OUTPUT); // Set GPIO18 as output.
     gpioSetMode(pin2, PI_OUTPUT); // Set GPIO18 as output.
@@ -31,8 +34,6 @@ void setup(int *periods)
 // test
 void main(void)
 {
-    // Initialize GPIOs
-    gpioInitialise();
     // Get periods
     int periods[4];
     setup(periods);
