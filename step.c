@@ -30,7 +30,7 @@ void setup(int *periods)
         fprintf(stderr, "pigpio initialization failed\n");
     }
 
-    // Set GPIOs as outputs
+    // Set GPIOs as output
     gpioSetMode(pin1, PI_OUTPUT); // Set GPIO18 as output.
     gpioSetMode(pin2, PI_OUTPUT); // Set GPIO18 as output.
     gpioSetMode(pin3, PI_OUTPUT); // Set GPIO18 as output.
