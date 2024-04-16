@@ -1,41 +1,4 @@
-// TO BUILD:
-// gcc -Wall -pthread -o step step.c -lpigpio -lrt
-
-#include <pigpio.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <time.h>
-
-#define rpm_1 30
-#define rpm_2 60
-#define rpm_3 90
-#define rpm_4 120
-
-#define pin1 27
-#define pin2 5
-#define pin3 13
-#define pin4 26
-
-void setup(int *periods)
-{
-    // Calculate the periods for each RPM value
-    periods[0] = 1.0E6 / (rpm_1 * 200.0 / 60.0);
-    periods[1] = 1.0E6 / (rpm_2 * 200.0 / 60.0);
-    periods[2] = 1.0E6 / (rpm_3 * 200.0 / 60.0);
-    periods[3] = 1.0E6 / (rpm_4 * 200.0 / 60.0);
-
-    // Initialize GPIOs
-    if (gpioInitialise() < 0)
-    {
-        fprintf(stderr, "pigpio initialization failed\n");
-    }
-
-    // Set GPIOs as output
-    gpioSetMode(pin1, PI_OUTPUT); // Set GPIO18 as output.
-    gpioSetMode(pin2, PI_OUTPUT); // Set GPIO18 as output.
-    gpioSetMode(pin3, PI_OUTPUT); // Set GPIO18 as output.
-    gpioSetMode(pin4, PI_OUTPUT); // Set GPIO18 as output.
-}
+#include "step.h"
 
 // test
 int main(void)
