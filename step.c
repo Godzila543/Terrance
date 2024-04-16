@@ -50,7 +50,7 @@ void main(void)
     while (1)
     {
         // Get current time
-        uint32_t current_micros = gpioTick();
+        uint32_t current_time = gpioTick();
 
         // Motor 1
         if (current_time - previous_step[0] > periods[0])
