@@ -1,3 +1,6 @@
+// TO BUILD:
+// gcc -Wall -pthread -o step step.c -lpigpio -lrt
+
 #include <pigpio.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -16,10 +19,10 @@
 void setup(int *periods)
 {
     // Calculate the periods for each RPM value
-    periods[0] = 10.0E6 / (rpm_1 * 200.0 / 60.0);
-    periods[1] = 10.0E6 / (rpm_2 * 200.0 / 60.0);
-    periods[2] = 10.0E6 / (rpm_3 * 200.0 / 60.0);
-    periods[3] = 10.0E6 / (rpm_4 * 200.0 / 60.0);
+    periods[0] = 1.0E6 / (rpm_1 * 200.0 / 60.0);
+    periods[1] = 1.0E6 / (rpm_2 * 200.0 / 60.0);
+    periods[2] = 1.0E6 / (rpm_3 * 200.0 / 60.0);
+    periods[3] = 1.0E6 / (rpm_4 * 200.0 / 60.0);
 
     // Initialize GPIOs
     if (gpioInitialise() < 0)
@@ -35,7 +38,7 @@ void setup(int *periods)
 }
 
 // test
-void main(void)
+int main(void)
 {
     // Get periods
     int periods[4];
