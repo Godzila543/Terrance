@@ -1,10 +1,36 @@
-CC=gcc
-CFLAGS=-I. -lpigpio -Wall -pthread -lrt
-DEPS = step.h
-OBJ = step.o main.o 
+# Compiler
+CXX = g++
 
-%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+# Directories
+SRC_DIR = ./src
+INC_DIR = ./inc
+OBJ_DIR = ./.obj
 
-main: $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS)
+# Compiler flags
+CXXFLAGS = -I$(INC_DIR)
+
+# Find all C++ files in the src directory
+SRCS = $(wildcard $(SRC_DIR)/*.cpp)
+
+# Object files
+OBJS = $(SRCS:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
+
+# Target executable
+TARGET = main 
+
+# Default rule
+all: $(TARGET)
+
+# Rule to link the target
+$(TARGET): $(OBJS)
+	$(CXX) $^ -o $@ -lpigpio
+
+# Rule to compile source files
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Rule to clean the build
+clean:
+	rm -f $(OBJ_DIR)/*.o $(TARGET)
+
+.PHONY: all clean
