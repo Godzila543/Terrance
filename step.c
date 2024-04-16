@@ -13,10 +13,9 @@
 #define pin3 13
 #define pin4 26
 
-int *setup(void)
+void setup(int *periods)
 {
     // Calculate the periods for each RPM value
-    int periods[4];
     periods[0] = 10.0E6 / (rpm_1 * 200.0 / 60.0);
     periods[1] = 10.0E6 / (rpm_2 * 200.0 / 60.0);
     periods[2] = 10.0E6 / (rpm_3 * 200.0 / 60.0);
@@ -38,7 +37,8 @@ int *setup(void)
 void main(void)
 {
     // Get periods
-    int *periods = setup();
+    int periods[4];
+    setup(periods);
 
     // Initialize the previous step times
     uint32_t previous_step[4];
