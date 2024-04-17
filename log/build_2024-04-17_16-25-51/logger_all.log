@@ -1,0 +1,119 @@
+[0.666s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.667s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff9bf50730>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9c089330>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9c089330>>)
+[1.887s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.889s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/seds/Desktop/TERRANCE/Terrance'
+[1.889s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.890s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.890s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.891s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.961s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.964s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.964s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.964s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.966s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.967s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.968s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_StepperController) by extensions ['ignore', 'ignore_ament_install']
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_StepperController) by extension 'ignore'
+[1.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_StepperController) by extension 'ignore_ament_install'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_StepperController) by extensions ['colcon_pkg']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_StepperController) by extension 'colcon_pkg'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_StepperController) by extensions ['colcon_meta']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_StepperController) by extension 'colcon_meta'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_StepperController) by extensions ['ros']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_StepperController) by extension 'ros'
+[1.984s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cpp_StepperController' with type 'ros.ament_cmake' and name 'cpp_StepperController'
+[1.984s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.985s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.985s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.985s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.985s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.124s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 281 installed packages in /opt/ros/iron
+[2.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'cpp_StepperController' build argument 'cmake_args' from command line to 'None'
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'cpp_StepperController' build argument 'cmake_target' from command line to 'None'
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'cpp_StepperController' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.416s] Level 5:colcon.colcon_core.verb:set package 'cpp_StepperController' build argument 'cmake_clean_cache' from command line to 'False'
+[2.416s] Level 5:colcon.colcon_core.verb:set package 'cpp_StepperController' build argument 'cmake_clean_first' from command line to 'False'
+[2.416s] Level 5:colcon.colcon_core.verb:set package 'cpp_StepperController' build argument 'cmake_force_configure' from command line to 'False'
+[2.416s] Level 5:colcon.colcon_core.verb:set package 'cpp_StepperController' build argument 'ament_cmake_args' from command line to 'None'
+[2.416s] Level 5:colcon.colcon_core.verb:set package 'cpp_StepperController' build argument 'catkin_cmake_args' from command line to 'None'
+[2.417s] Level 5:colcon.colcon_core.verb:set package 'cpp_StepperController' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.417s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_StepperController' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController', 'merge_install': False, 'path': '/home/seds/Desktop/TERRANCE/Terrance/src/cpp_StepperController', 'symlink_install': False, 'test_result_base': None}
+[2.418s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.422s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.423s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/seds/Desktop/TERRANCE/Terrance/src/cpp_StepperController' with build type 'ament_cmake'
+[2.424s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/seds/Desktop/TERRANCE/Terrance/src/cpp_StepperController'
+[2.445s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.447s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.448s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.505s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController -- -j4 -l4
+[2.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController -- -j4 -l4
+[2.914s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_StepperController)
+[2.942s] Level 1:colcon.colcon_core.environment:checking '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController' for CMake module files
+[2.945s] Level 1:colcon.colcon_core.environment:checking '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController' for CMake config files
+[2.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_StepperController', 'cmake_prefix_path')
+[2.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/share/cpp_StepperController/hook/cmake_prefix_path.ps1'
+[2.953s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/share/cpp_StepperController/hook/cmake_prefix_path.dsv'
+[2.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/share/cpp_StepperController/hook/cmake_prefix_path.sh'
+[2.961s] Level 1:colcon.colcon_core.environment:checking '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/bin'
+[2.962s] Level 1:colcon.colcon_core.environment:checking '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/lib/pkgconfig/cpp_StepperController.pc'
+[2.963s] Level 1:colcon.colcon_core.environment:checking '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/lib/python3.10/site-packages'
+[2.964s] Level 1:colcon.colcon_core.environment:checking '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/bin'
+[2.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/share/cpp_StepperController/package.ps1'
+[2.970s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/share/cpp_StepperController/package.dsv'
+[2.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/share/cpp_StepperController/package.sh'
+[2.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/share/cpp_StepperController/package.bash'
+[2.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/share/cpp_StepperController/package.zsh'
+[2.991s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController/share/colcon-core/packages/cpp_StepperController)
+[3.003s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.003s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.004s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[3.004s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.033s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.034s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.035s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.156s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.157s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/seds/Desktop/TERRANCE/Terrance/install/local_setup.ps1'
+[3.163s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/seds/Desktop/TERRANCE/Terrance/install/_local_setup_util_ps1.py'
+[3.174s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/seds/Desktop/TERRANCE/Terrance/install/setup.ps1'
+[3.183s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/seds/Desktop/TERRANCE/Terrance/install/local_setup.sh'
+[3.189s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/seds/Desktop/TERRANCE/Terrance/install/_local_setup_util_sh.py'
+[3.193s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/seds/Desktop/TERRANCE/Terrance/install/setup.sh'
+[3.200s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/seds/Desktop/TERRANCE/Terrance/install/local_setup.bash'
+[3.206s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/seds/Desktop/TERRANCE/Terrance/install/setup.bash'
+[3.213s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/seds/Desktop/TERRANCE/Terrance/install/local_setup.zsh'
+[3.218s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/seds/Desktop/TERRANCE/Terrance/install/setup.zsh'

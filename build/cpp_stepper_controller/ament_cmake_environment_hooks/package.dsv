@@ -1,0 +1,4 @@
+source;share/cpp_stepper_controller/local_setup.bash
+source;share/cpp_stepper_controller/local_setup.dsv
+source;share/cpp_stepper_controller/local_setup.sh
+source;share/cpp_stepper_controller/local_setup.zsh

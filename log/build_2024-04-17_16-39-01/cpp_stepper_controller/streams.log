@@ -1,0 +1,11 @@
+[0.068s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[0.266s] [35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[0.317s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[0.440s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kpins.hpp: No such file or directory
+[0.441s]     7 | #include [01;31m[K"pins.hpp"[m[K
+[0.442s]       |          [01;31m[K^~~~~~~~~~[m[K
+[0.442s] compilation terminated.
+[0.445s] gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:76: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o] Error 1
+[0.446s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_stepper_controller.dir/all] Error 2
+[0.447s] gmake: *** [Makefile:146: all] Error 2
+[0.454s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
