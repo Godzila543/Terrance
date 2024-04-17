@@ -1,14 +1,14 @@
 #include <pigpio.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <time.h>
+// #include <stdio.h>
+// #include <unistd.h>
+// #include <time.h>
 
 #include "pins.hpp"
 #include "StepperController.hpp"
 
-
 // test
-int main(void) {
+int main(void)
+{
   gpioInitialise();
   StepperController motors[4];
   motors[0] = StepperController(pin1, 30);
@@ -16,7 +16,8 @@ int main(void) {
   motors[2] = StepperController(pin3, 90);
   motors[3] = StepperController(pin4, 120);
 
-  while (1) {
+  while (1)
+  {
     // Get current time
     uint32_t current_time = gpioTick();
     motors[0].updateActivation(current_time);
@@ -24,7 +25,6 @@ int main(void) {
     motors[2].updateActivation(current_time);
     motors[3].updateActivation(current_time);
 
-    
     // Stay high for 1000 us
     gpioDelay(1000);
 

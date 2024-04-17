@@ -1,4 +1,0 @@
-CompileFlags:
-  Add: 
-    - '-I/root/Terrance/inc'
-      
