@@ -1,0 +1,9 @@
+[31mCMake Error at CMakeLists.txt:15 (add_executable):
+  add_executable cannot create target "cpp_stepper_controller" because
+  another target with the same name already exists.  The existing target is
+  an executable created in source directory
+  "/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller".  See
+  documentation for policy CMP0002 for more details.
+
+[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

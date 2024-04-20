@@ -62,4 +62,4 @@ CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/pins.hpp \
- /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/StepperController.h
+ /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/StepperController.hpp

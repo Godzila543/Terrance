@@ -1,0 +1,31 @@
+[0.074s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[0.269s] [35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[0.346s] [ 33%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o[0m
+[0.350s] [ 66%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[0.478s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp:[m[K In member function ‘[01m[Kvoid StepperController::updateActivation(uint32_t)[m[K’:
+[0.478s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp:18:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.479s]    18 |   if ([01;35m[Kt + period_us > previous_step[m[K)
+[0.479s]       |       [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[0.609s] [100%] [32m[1mLinking CXX executable cpp_stepper_controller[0m
+[0.834s] [100%] Built target cpp_stepper_controller
+[0.885s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[1.103s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller
+[1.142s] -- Install configuration: ""
+[1.144s] -- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller
+[1.148s] -- Set runtime path of "/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller" to ""
+[1.149s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/package_run_dependencies/cpp_stepper_controller
+[1.149s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/parent_prefix_path/cpp_stepper_controller
+[1.150s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.sh
+[1.152s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.dsv
+[1.152s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.sh
+[1.153s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.dsv
+[1.154s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.bash
+[1.155s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.sh
+[1.155s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.zsh
+[1.156s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.dsv
+[1.157s] -- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.dsv
+[1.158s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/packages/cpp_stepper_controller
+[1.158s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig.cmake
+[1.159s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig-version.cmake
+[1.160s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.xml
+[1.174s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller

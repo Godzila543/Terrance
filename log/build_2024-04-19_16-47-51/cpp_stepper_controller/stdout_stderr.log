@@ -1,0 +1,25 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o[0m
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp:[m[K In member function ‘[01m[Kvoid StepperController::updateActivation(uint32_t)[m[K’:
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp:19:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   19 |   if ([01;35m[Kt + period_us > previous_step[m[K)
+      |       [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[ 66%] [32m[1mLinking CXX executable cpp_stepper_controller[0m
+[100%] Built target cpp_stepper_controller
+-- Install configuration: ""
+-- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller
+-- Set runtime path of "/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller" to ""
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/package_run_dependencies/cpp_stepper_controller
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/parent_prefix_path/cpp_stepper_controller
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.sh
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.dsv
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.bash
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.sh
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.zsh
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.dsv
+-- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.dsv
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/packages/cpp_stepper_controller
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig.cmake
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig-version.cmake
+-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.xml

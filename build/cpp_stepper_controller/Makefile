@@ -210,6 +210,30 @@ cpp_stepper_controller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_stepper_controller.dir/build.make CMakeFiles/cpp_stepper_controller.dir/build
 .PHONY : cpp_stepper_controller/fast
 
+src/StepperController.o: src/StepperController.cpp.o
+.PHONY : src/StepperController.o
+
+# target to build an object file
+src/StepperController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_stepper_controller.dir/build.make CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o
+.PHONY : src/StepperController.cpp.o
+
+src/StepperController.i: src/StepperController.cpp.i
+.PHONY : src/StepperController.i
+
+# target to preprocess a source file
+src/StepperController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_stepper_controller.dir/build.make CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.i
+.PHONY : src/StepperController.cpp.i
+
+src/StepperController.s: src/StepperController.cpp.s
+.PHONY : src/StepperController.s
+
+# target to generate assembly for a file
+src/StepperController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_stepper_controller.dir/build.make CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.s
+.PHONY : src/StepperController.cpp.s
+
 src/cpp_stepper_controller.o: src/cpp_stepper_controller.cpp.o
 .PHONY : src/cpp_stepper_controller.o
 
@@ -250,6 +274,9 @@ help:
 	@echo "... cpp_stepper_controller_uninstall"
 	@echo "... uninstall"
 	@echo "... cpp_stepper_controller"
+	@echo "... src/StepperController.o"
+	@echo "... src/StepperController.i"
+	@echo "... src/StepperController.s"
 	@echo "... src/cpp_stepper_controller.o"
 	@echo "... src/cpp_stepper_controller.i"
 	@echo "... src/cpp_stepper_controller.s"

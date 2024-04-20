@@ -1,0 +1,27 @@
+[0.061s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[0.241s] [35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[0.295s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[0.542s] [100%] [32m[1mLinking CXX executable cpp_stepper_controller[0m
+[0.693s] /usr/bin/ld: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o: in function `main':
+[0.694s] cpp_stepper_controller.cpp:(.text+0x34): undefined reference to `gpioInitialise'
+[0.695s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x58): undefined reference to `StepperController::StepperController(int, float)'
+[0.695s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x78): undefined reference to `StepperController::StepperController(int, float)'
+[0.696s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x94): undefined reference to `StepperController::StepperController(int, float)'
+[0.696s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xb0): undefined reference to `StepperController::StepperController(int, float)'
+[0.696s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xcc): undefined reference to `StepperController::StepperController(int, float)'
+[0.697s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xd8): undefined reference to `gpioTick'
+[0.697s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xe8): undefined reference to `StepperController::updateActivation(unsigned int)'
+[0.697s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xf8): undefined reference to `StepperController::updateActivation(unsigned int)'
+[0.698s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x108): undefined reference to `StepperController::updateActivation(unsigned int)'
+[0.698s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x118): undefined reference to `StepperController::updateActivation(unsigned int)'
+[0.698s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x120): undefined reference to `gpioDelay'
+[0.699s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x128): undefined reference to `StepperController::deactivate()'
+[0.699s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x134): undefined reference to `StepperController::deactivate()'
+[0.699s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x140): undefined reference to `StepperController::deactivate()'
+[0.700s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x14c): undefined reference to `StepperController::deactivate()'
+[0.701s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x154): undefined reference to `gpioDelay'
+[0.701s] collect2: error: ld returned 1 exit status
+[0.705s] gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:97: cpp_stepper_controller] Error 1
+[0.706s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_stepper_controller.dir/all] Error 2
+[0.707s] gmake: *** [Makefile:146: all] Error 2
+[0.713s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4

@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable cpp_stepper_controller[0m
+/usr/bin/ld: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o: in function `main':
+cpp_stepper_controller.cpp:(.text+0x34): undefined reference to `gpioInitialise'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x58): undefined reference to `StepperController::StepperController(int, float)'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x78): undefined reference to `StepperController::StepperController(int, float)'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x94): undefined reference to `StepperController::StepperController(int, float)'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xb0): undefined reference to `StepperController::StepperController(int, float)'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xcc): undefined reference to `StepperController::StepperController(int, float)'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xd8): undefined reference to `gpioTick'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xe8): undefined reference to `StepperController::updateActivation(unsigned int)'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xf8): undefined reference to `StepperController::updateActivation(unsigned int)'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x108): undefined reference to `StepperController::updateActivation(unsigned int)'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x118): undefined reference to `StepperController::updateActivation(unsigned int)'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x120): undefined reference to `gpioDelay'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x128): undefined reference to `StepperController::deactivate()'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x134): undefined reference to `StepperController::deactivate()'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x140): undefined reference to `StepperController::deactivate()'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x14c): undefined reference to `StepperController::deactivate()'
+/usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x154): undefined reference to `gpioDelay'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:97: cpp_stepper_controller] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_stepper_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,10 @@
+/home/seds/Desktop/TERRANCE/Terrance/src/build/cpp_stepper_controller/CMakeFiles/uninstall.dir
+/home/seds/Desktop/TERRANCE/Terrance/src/build/cpp_stepper_controller/CMakeFiles/cpp_stepper_controller_uninstall.dir
+/home/seds/Desktop/TERRANCE/Terrance/src/build/cpp_stepper_controller/CMakeFiles/cpp_stepper_controller.dir
+/home/seds/Desktop/TERRANCE/Terrance/src/build/cpp_stepper_controller/CMakeFiles/test.dir
+/home/seds/Desktop/TERRANCE/Terrance/src/build/cpp_stepper_controller/CMakeFiles/edit_cache.dir
+/home/seds/Desktop/TERRANCE/Terrance/src/build/cpp_stepper_controller/CMakeFiles/rebuild_cache.dir
+/home/seds/Desktop/TERRANCE/Terrance/src/build/cpp_stepper_controller/CMakeFiles/list_install_components.dir
+/home/seds/Desktop/TERRANCE/Terrance/src/build/cpp_stepper_controller/CMakeFiles/install.dir
+/home/seds/Desktop/TERRANCE/Terrance/src/build/cpp_stepper_controller/CMakeFiles/install/local.dir
+/home/seds/Desktop/TERRANCE/Terrance/src/build/cpp_stepper_controller/CMakeFiles/install/strip.dir

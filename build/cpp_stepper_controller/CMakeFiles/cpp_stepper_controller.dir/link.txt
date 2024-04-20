@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o -o cpp_stepper_controller 
+/usr/bin/c++ CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o -o cpp_stepper_controller  -Wl,-rpath,/usr/local/lib: /usr/local/lib/libpigpio.so /usr/lib/aarch64-linux-gnu/librt.a 

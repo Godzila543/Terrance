@@ -69,10 +69,24 @@ include CMakeFiles/cpp_stepper_controller.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpp_stepper_controller.dir/flags.make
 
+CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o: CMakeFiles/cpp_stepper_controller.dir/flags.make
+CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o: /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp
+CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o: CMakeFiles/cpp_stepper_controller.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o -MF CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o.d -o CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o -c /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp
+
+CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp > CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.i
+
+CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp -o CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.s
+
 CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o: CMakeFiles/cpp_stepper_controller.dir/flags.make
 CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o: /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp
 CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o: CMakeFiles/cpp_stepper_controller.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o -MF CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o.d -o CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o -c /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp
 
 CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.i: cmake_force
@@ -85,15 +99,19 @@ CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.s: cmake_fo
 
 # Object files for target cpp_stepper_controller
 cpp_stepper_controller_OBJECTS = \
+"CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o" \
 "CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o"
 
 # External object files for target cpp_stepper_controller
 cpp_stepper_controller_EXTERNAL_OBJECTS =
 
+cpp_stepper_controller: CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o
 cpp_stepper_controller: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o
 cpp_stepper_controller: CMakeFiles/cpp_stepper_controller.dir/build.make
+cpp_stepper_controller: /usr/local/lib/libpigpio.so
+cpp_stepper_controller: /usr/lib/aarch64-linux-gnu/librt.a
 cpp_stepper_controller: CMakeFiles/cpp_stepper_controller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cpp_stepper_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable cpp_stepper_controller"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_stepper_controller.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

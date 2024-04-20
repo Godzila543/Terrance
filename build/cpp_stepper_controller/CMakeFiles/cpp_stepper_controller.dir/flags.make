@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include
 
-CXX_FLAGS = -Wall -Wextra -Wpedantic -lpigpio
+CXX_FLAGS = -Wall -Wextra -Wpedantic -pthread
 

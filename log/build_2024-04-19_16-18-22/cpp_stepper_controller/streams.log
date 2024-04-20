@@ -1,0 +1,34 @@
+[0.058s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[0.180s] -- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)
+[1.087s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[1.445s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.445s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include>
+[1.446s] -- Configured cppcheck exclude dirs and/or files: 
+[1.451s] -- Added test 'lint_cmake' to check CMake code style
+[1.461s] -- Added test 'uncrustify' to check C / C++ code style
+[1.462s] -- Configured uncrustify additional arguments: 
+[1.464s] -- Added test 'xmllint' to check XML markup files
+[1.469s] -- Configuring done
+[1.507s] -- Generating done
+[1.516s] -- Build files have been written to: /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller
+[1.622s] [35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[1.679s] [ 50%] [32m[1mLinking CXX executable cpp_stepper_controller[0m
+[1.856s] /usr/bin/ld: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o: in function `main':
+[1.856s] cpp_stepper_controller.cpp:(.text+0x58): undefined reference to `StepperController::StepperController(int, float)'
+[1.857s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x78): undefined reference to `StepperController::StepperController(int, float)'
+[1.857s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x94): undefined reference to `StepperController::StepperController(int, float)'
+[1.858s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xb0): undefined reference to `StepperController::StepperController(int, float)'
+[1.859s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xcc): undefined reference to `StepperController::StepperController(int, float)'
+[1.859s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xe8): undefined reference to `StepperController::updateActivation(unsigned int)'
+[1.859s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0xf8): undefined reference to `StepperController::updateActivation(unsigned int)'
+[1.860s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x108): undefined reference to `StepperController::updateActivation(unsigned int)'
+[1.861s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x118): undefined reference to `StepperController::updateActivation(unsigned int)'
+[1.863s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x128): undefined reference to `StepperController::deactivate()'
+[1.863s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x134): undefined reference to `StepperController::deactivate()'
+[1.863s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x140): undefined reference to `StepperController::deactivate()'
+[1.864s] /usr/bin/ld: cpp_stepper_controller.cpp:(.text+0x14c): undefined reference to `StepperController::deactivate()'
+[1.865s] collect2: error: ld returned 1 exit status
+[1.871s] gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:98: cpp_stepper_controller] Error 1
+[1.872s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_stepper_controller.dir/all] Error 2
+[1.874s] gmake: *** [Makefile:146: all] Error 2
+[1.881s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
