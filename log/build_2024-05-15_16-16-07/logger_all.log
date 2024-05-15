@@ -1,0 +1,174 @@
+[0.193s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'py_publisher']
+[0.193s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['py_publisher'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f40d6c51120>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f40d6d597b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f40d6d597b0>>, mixin_verb=('build',))
+[0.344s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.344s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.344s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.344s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.344s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.344s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.344s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/colin/Terrance'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_stepper_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_stepper_controller) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_stepper_controller) by extension 'ignore_ament_install'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_stepper_controller) by extensions ['colcon_pkg']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_stepper_controller) by extension 'colcon_pkg'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_stepper_controller) by extensions ['colcon_meta']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_stepper_controller) by extension 'colcon_meta'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_stepper_controller) by extensions ['ros']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/cpp_stepper_controller) by extension 'ros'
+[0.359s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cpp_stepper_controller' with type 'ros.ament_cmake' and name 'cpp_stepper_controller'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extensions ['colcon_meta']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extension 'colcon_meta'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extensions ['ros']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extension 'ros'
+[0.360s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_publisher' with type 'ros.ament_python' and name 'py_publisher'
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.376s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'cpp_stepper_controller' in 'src/cpp_stepper_controller'
+[0.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.378s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/colin/Terrance/install
+[0.378s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 281 installed packages in /opt/ros/iron
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_args' from command line to 'None'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_target' from command line to 'None'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.411s] DEBUG:colcon.colcon_core.verb:Building package 'py_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/colin/Terrance/build/py_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/colin/Terrance/install/py_publisher', 'merge_install': False, 'path': '/home/colin/Terrance/src/py_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.411s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.412s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.413s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/colin/Terrance/src/py_publisher' with build type 'ament_python'
+[0.413s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_publisher', 'ament_prefix_path')
+[0.415s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/colin/Terrance/install/py_publisher/share/py_publisher/hook/ament_prefix_path.ps1'
+[0.418s] ERROR:colcon.colcon_core.shell:Exception in shell extension 'powershell': [Errno 13] Permission denied: '/home/colin/Terrance/install/py_publisher/share/py_publisher/hook/ament_prefix_path.ps1'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/shell/__init__.py", line 425, in create_environment_hook
+    hook = extension.create_hook_prepend_value(
+  File "/usr/lib/python3/dist-packages/colcon_powershell/shell/powershell.py", line 148, in create_hook_prepend_value
+    expand_template(
+  File "/usr/lib/python3/dist-packages/colcon_core/shell/template/__init__.py", line 54, in expand_template
+    with destination_path.open('w') as h:
+  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+PermissionError: [Errno 13] Permission denied: '/home/colin/Terrance/install/py_publisher/share/py_publisher/hook/ament_prefix_path.ps1'
+
+[0.418s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/colin/Terrance/install/py_publisher/share/py_publisher/hook/ament_prefix_path.dsv'
+[0.419s] ERROR:colcon.colcon_core.shell:Exception in shell extension 'dsv': [Errno 13] Permission denied: '/home/colin/Terrance/install/py_publisher/share/py_publisher/hook/ament_prefix_path.dsv'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/shell/__init__.py", line 425, in create_environment_hook
+    hook = extension.create_hook_prepend_value(
+  File "/usr/lib/python3/dist-packages/colcon_core/shell/dsv.py", line 75, in create_hook_prepend_value
+    expand_template(
+  File "/usr/lib/python3/dist-packages/colcon_core/shell/template/__init__.py", line 54, in expand_template
+    with destination_path.open('w') as h:
+  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+PermissionError: [Errno 13] Permission denied: '/home/colin/Terrance/install/py_publisher/share/py_publisher/hook/ament_prefix_path.dsv'
+
+[0.419s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/colin/Terrance/install/py_publisher/share/py_publisher/hook/ament_prefix_path.sh'
+[0.420s] ERROR:colcon.colcon_core.shell:Exception in shell extension 'sh': [Errno 13] Permission denied: '/home/colin/Terrance/install/py_publisher/share/py_publisher/hook/ament_prefix_path.sh'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/shell/__init__.py", line 425, in create_environment_hook
+    hook = extension.create_hook_prepend_value(
+  File "/usr/lib/python3/dist-packages/colcon_core/shell/sh.py", line 127, in create_hook_prepend_value
+    expand_template(
+  File "/usr/lib/python3/dist-packages/colcon_core/shell/template/__init__.py", line 54, in expand_template
+    with destination_path.open('w') as h:
+  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+PermissionError: [Errno 13] Permission denied: '/home/colin/Terrance/install/py_publisher/share/py_publisher/hook/ament_prefix_path.sh'
+
+[0.423s] ERROR:colcon.colcon_core.event_reactor:Exception in event handler extension 'store_result': [Errno 13] Permission denied: '/home/colin/Terrance/build/py_publisher/colcon_build.rc'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/event_reactor.py", line 78, in _notify_observers
+    retval = observer(event)
+  File "/usr/lib/python3/dist-packages/colcon_package_selection/package_selection/previous/event_handler.py", line 53, in __call__
+    set_result(job.task_context.args.build_base, verb_name, result)
+  File "/usr/lib/python3/dist-packages/colcon_package_selection/package_selection/previous/__init__.py", line 36, in set_result
+    path.write_text(str(result) + '\n')
+  File "/usr/lib/python3.10/pathlib.py", line 1154, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+PermissionError: [Errno 13] Permission denied: '/home/colin/Terrance/build/py_publisher/colcon_build.rc'
+
+[0.431s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.432s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.432s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with 'Could not find a primary shell extension for creating an environment hook'
+[0.432s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.511s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[0.512s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.512s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.512s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.512s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[0.512s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.512s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/colin/Terrance/install/local_setup.ps1'
+[0.513s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/colin/Terrance/install/_local_setup_util_ps1.py'
+[0.514s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/colin/Terrance/install/setup.ps1'
+[0.515s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/colin/Terrance/install/local_setup.sh'
+[0.516s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/colin/Terrance/install/_local_setup_util_sh.py'
+[0.516s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/colin/Terrance/install/setup.sh'
+[0.516s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/colin/Terrance/install/local_setup.bash'
+[0.517s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/colin/Terrance/install/setup.bash'
+[0.517s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/colin/Terrance/install/local_setup.zsh'
+[0.518s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/colin/Terrance/install/setup.zsh'
