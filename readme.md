@@ -1,7 +1,8 @@
 # Cheatsheet
 ## Useful Commands
 + `pip install inputs` install the controller input library
-+ `colcon build --packages-select py_publisher` built the python package
++ `colcon build --cmake-clean-cache` build all packages, and clean the cache to allow building on a new system
++ `colcon build --packages-select py_publisher` build the python package
 + `ros2 run py_publisher gamepad` run the gamepad input node
 
 ## Useful Links
