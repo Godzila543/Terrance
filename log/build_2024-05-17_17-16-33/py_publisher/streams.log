@@ -1,0 +1,27 @@
+[0.308s] Invoking command in '/root/Terrance/src/py_publisher': PYTHONPATH=/root/Terrance/build/py_publisher/prefix_override:/root/Terrance/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_publisher build --build-base /root/Terrance/build/py_publisher/build install --record /root/Terrance/build/py_publisher/install.log --single-version-externally-managed install_data
+[0.428s] running egg_info
+[0.428s] writing ../../build/py_publisher/py_publisher.egg-info/PKG-INFO
+[0.429s] writing dependency_links to ../../build/py_publisher/py_publisher.egg-info/dependency_links.txt
+[0.429s] writing entry points to ../../build/py_publisher/py_publisher.egg-info/entry_points.txt
+[0.429s] writing requirements to ../../build/py_publisher/py_publisher.egg-info/requires.txt
+[0.429s] writing top-level names to ../../build/py_publisher/py_publisher.egg-info/top_level.txt
+[0.430s] reading manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'
+[0.430s] adding license file 'LICENSE'
+[0.430s] writing manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'
+[0.430s] running build
+[0.430s] running build_py
+[0.430s] copying py_publisher/gamepad.py -> /root/Terrance/build/py_publisher/build/lib/py_publisher
+[0.430s] running install
+[0.431s] running install_lib
+[0.431s] copying /root/Terrance/build/py_publisher/build/lib/py_publisher/gamepad.py -> /root/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher
+[0.431s] byte-compiling /root/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher/gamepad.py to gamepad.cpython-310.pyc
+[0.432s] running install_data
+[0.432s] running install_egg_info
+[0.433s] removing '/root/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[0.433s] Copying ../../build/py_publisher/py_publisher.egg-info to /root/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info
+[0.433s] running install_scripts
+[0.444s] Installing gamepad script to /root/Terrance/install/py_publisher/lib/py_publisher
+[0.444s] Installing listener script to /root/Terrance/install/py_publisher/lib/py_publisher
+[0.444s] Installing talker script to /root/Terrance/install/py_publisher/lib/py_publisher
+[0.444s] writing list of installed files to '/root/Terrance/build/py_publisher/install.log'
+[0.457s] Invoked command in '/root/Terrance/src/py_publisher' returned '0': PYTHONPATH=/root/Terrance/build/py_publisher/prefix_override:/root/Terrance/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_publisher build --build-base /root/Terrance/build/py_publisher/build install --record /root/Terrance/build/py_publisher/install.log --single-version-externally-managed install_data
