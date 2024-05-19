@@ -5,12 +5,49 @@ from std_msgs.msg import String
 import socket
 import json
 
+class Controller:
+    def __init__(self):
+        self.state = {
+            "left_stick": {"x": 0, "y": 0},
+            "right_stick": {"x": 0, "y": 0},
+            "d_pad": {"x": 0, "y": 0},
+            "triggers": {"left": 0, "right": 0},
+            "buttons": {"up": 0, "down": 0, "left": 0, "right": 0, "a": 0, "b": 0, "x": 0, "y": 0,
+                        "l1": 0, "r1": 0, "select": 0, "start": 0, "l_stick": 0, "r_stick": 0}
+        }
+        
+    def update(self, data):
+        state = self.state
+        state["left_stick"]["x"] = data["axes"].get('ABS_X', state["left_stick"]["x"])
+        state["left_stick"]["y"] = data["axes"].get('ABS_Y', state["left_stick"]["y"])
+        state["right_stick"]["x"] = data["axes"].get('ABS_RX', state["right_stick"]["x"])
+        state["right_stick"]["y"] = data["axes"].get('ABS_RY', state["right_stick"]["y"])
+        state["d_pad"]["x"] = data["axes"].get('ABS_HAT0X', state["d_pad"]["x"])
+        state["d_pad"]["y"] = data["axes"].get('ABS_HAT0Y', state["d_pad"]["y"])
+        state["triggers"]["left"] = data["axes"].get('ABS_Z', state["triggers"]["left"])
+        state["triggers"]["right"] = data["axes"].get('ABS_RZ', state["triggers"]["right"])
+        state["buttons"]["y"] = data["buttons"].get('BTN_NORTH', state["buttons"]["up"])
+        state["buttons"]["b"] = data["buttons"].get('BTN_EAST', state["buttons"]["down"])
+        state["buttons"]["a"] = data["buttons"].get('BTN_SOUTH', state["buttons"]["left"])
+        state["buttons"]["x"] = data["buttons"].get('BTN_WEST', state["buttons"]["right"])
+        state["buttons"]["l1"] = data["buttons"].get('BTN_TL', state["buttons"]["l1"])
+        state["buttons"]["r1"] = data["buttons"].get('BTN_TR', state["buttons"]["r1"])
+        state["buttons"]["select"] = data["buttons"].get('BTN_SELECT', state["buttons"]["select"])
+        state["buttons"]["start"] = data["buttons"].get('BTN_START', state["buttons"]["start"])
+        state["buttons"]["l_stick"] = data["buttons"].get('BTN_THUMBL', state["buttons"]["l_stick"])
+        state["buttons"]["r_stick"] = data["buttons"].get('BTN_THUMBR', state["buttons"]["r_stick"])
+
+
 class GamepadNode(Node):
     def __init__(self):
         super().__init__('gamepad_node')
+        self.controller = Controller()
         self.publisher_ = self.create_publisher(String, 'gamepad', 10)
+
+
         timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
+
         self.buffer = ""
         self.server_address = ('192.168.192.1', 54535)
         self.get_logger().info('Connecting to gamepad server (check server and address if no connection)')
@@ -20,7 +57,7 @@ class GamepadNode(Node):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         while True:
             try:
-                self.sock.connect(self.server_address, timeout=1)
+                self.sock.connect(self.server_address)
                 self.get_logger().info('Connected to gamepad server')
                 break
             except ConnectionRefusedError:
@@ -41,9 +78,11 @@ class GamepadNode(Node):
                     line, self.buffer = self.buffer.split("\n", 1)
                     # Decode and print the data
                     gamepad_data = json.loads(line)
+                    self.controller.update(gamepad_data)
                     msg = String()
-                    msg.data = f"Axes: {gamepad_data['axes']}, Buttons: {gamepad_data['buttons']}"
+                    msg.data = json.dumps(self.controller.state)
                     self.publisher_.publish(msg)
+                    self.get_logger().info(f"Publishing: {msg.data}")
         except socket.error as e:
             self.get_logger().error(f"Socket error: {e}, reconnecting")
             self.sock.close()
