@@ -4,7 +4,7 @@
 + `colcon build --cmake-clean-cache` build all packages, and clean the cache to allow building on a new system
 + `colcon build --packages-select py_publisher` build the python package
 + `ros2 run py_publisher gamepad` run the gamepad input node
-+ `python gamepad_server.py` run the gamepad server
++ `python ./scripts/gamepad_server.py` run the gamepad server
 
 ## Useful Links
 + [Python Pubilsher](https://docs.ros.org/en/iron/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html)
