@@ -6,6 +6,10 @@ import queue
 import threading
 from inputs import devices
 
+print("Welcome to the super cool and awesome gamepad server!")
+print("Press Ctrl+C to shut down the server.")
+print("Please move the gamepad if the server is not responding.\n")
+
 # Initialize Gamepad
 if not devices.gamepads:
     print(

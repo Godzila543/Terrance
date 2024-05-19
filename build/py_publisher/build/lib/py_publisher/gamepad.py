@@ -13,14 +13,14 @@ class GamepadNode(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.buffer = ""
         self.server_address = ('192.168.192.1', 54535)
-        self.get_logger().info('Connecting to gamepad server')
+        self.get_logger().info('Connecting to gamepad server (check server and address if no connection)')
         self.connect_to_server()
 
     def connect_to_server(self):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         while True:
             try:
-                self.sock.connect(self.server_address)
+                self.sock.connect(self.server_address, timeout=1)
                 self.get_logger().info('Connected to gamepad server')
                 break
             except ConnectionRefusedError:
@@ -44,7 +44,6 @@ class GamepadNode(Node):
                     msg = String()
                     msg.data = f"Axes: {gamepad_data['axes']}, Buttons: {gamepad_data['buttons']}"
                     self.publisher_.publish(msg)
-                    self.get_logger().info(f"Publishing: {msg.data}")
         except socket.error as e:
             self.get_logger().error(f"Socket error: {e}, reconnecting")
             self.sock.close()
