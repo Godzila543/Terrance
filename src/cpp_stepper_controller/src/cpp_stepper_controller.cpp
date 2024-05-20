@@ -6,7 +6,8 @@
 
 #include "pins.hpp"
 #include "StepperController.hpp"
-
+#include "controller.hpp"
+#include "listener.hpp"
 
 
 int main(int argc, char ** argv)
@@ -23,8 +24,15 @@ int main(int argc, char ** argv)
   motors[2] = StepperController(pin3, 45);
   motors[3] = StepperController(pin4, 60);
 
+  auto controller = controller();
+
+  // Setup ROS listener node
+  listener = controllerSubscriber();
+
   while (1)
   {
+    controller.update();
+
     // Get current time
     uint32_t current_time = gpioTick();
     motors[0].updateActivation(current_time);
