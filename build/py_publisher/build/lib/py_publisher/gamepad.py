@@ -82,7 +82,6 @@ class GamepadNode(Node):
                     msg = String()
                     msg.data = json.dumps(self.controller.state)
                     self.publisher_.publish(msg)
-                    self.get_logger().info(f"Publishing: {msg.data}")
         except socket.error as e:
             self.get_logger().error(f"Socket error: {e}, reconnecting")
             self.sock.close()

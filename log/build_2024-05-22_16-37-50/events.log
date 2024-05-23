@@ -1,0 +1,368 @@
+[0.000000] (-) TimerEvent: {}
+[0.001802] (cpp_stepper_controller) JobQueued: {'identifier': 'cpp_stepper_controller', 'dependencies': OrderedDict()}
+[0.002361] (py_publisher) JobQueued: {'identifier': 'py_publisher', 'dependencies': OrderedDict()}
+[0.002455] (cpp_stepper_controller) JobStarted: {'identifier': 'cpp_stepper_controller'}
+[0.036946] (py_publisher) JobStarted: {'identifier': 'py_publisher'}
+[0.075926] (cpp_stepper_controller) JobProgress: {'identifier': 'cpp_stepper_controller', 'progress': 'cmake'}
+[0.077580] (cpp_stepper_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller', '-DCMAKE_INSTALL_PREFIX=/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller'], 'cwd': '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/seds'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1131'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seds'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seds-desktop:@/tmp/.ICE-unix/1131,unix/seds-desktop:/tmp/.ICE-unix/1131'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/da4e0fc1_6a06_4683_b723_0654151dcda4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MD5TN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('SUDO_USER', 'seds'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron')]), 'shell': False}
+[0.099843] (-) TimerEvent: {}
+[0.200839] (-) TimerEvent: {}
+[0.301617] (-) TimerEvent: {}
+[0.372735] (cpp_stepper_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.401820] (-) TimerEvent: {}
+[0.502661] (-) TimerEvent: {}
+[0.603910] (-) TimerEvent: {}
+[0.646644] (cpp_stepper_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.676197] (cpp_stepper_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.704047] (-) TimerEvent: {}
+[0.804835] (-) TimerEvent: {}
+[0.905547] (-) TimerEvent: {}
+[1.006319] (cpp_stepper_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.006861] (-) TimerEvent: {}
+[1.031703] (cpp_stepper_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.032668] (cpp_stepper_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.034390] (cpp_stepper_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.049377] (cpp_stepper_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.107120] (-) TimerEvent: {}
+[1.208390] (-) TimerEvent: {}
+[1.309114] (-) TimerEvent: {}
+[1.409904] (-) TimerEvent: {}
+[1.420310] (cpp_stepper_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.449010] (cpp_stepper_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.450075] (cpp_stepper_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.451187] (cpp_stepper_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.478382] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.5 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[1.510196] (-) TimerEvent: {}
+[1.611598] (-) TimerEvent: {}
+[1.713345] (-) TimerEvent: {}
+[1.814660] (-) TimerEvent: {}
+[1.915578] (-) TimerEvent: {}
+[2.016656] (-) TimerEvent: {}
+[2.117807] (-) TimerEvent: {}
+[2.218903] (-) TimerEvent: {}
+[2.319854] (-) TimerEvent: {}
+[2.420718] (-) TimerEvent: {}
+[2.456351] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.520955] (-) TimerEvent: {}
+[2.621733] (-) TimerEvent: {}
+[2.722644] (-) TimerEvent: {}
+[2.823925] (-) TimerEvent: {}
+[2.924667] (-) TimerEvent: {}
+[3.025379] (-) TimerEvent: {}
+[3.095600] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rclcpp: 21.0.6 (/opt/ros/iron/share/rclcpp/cmake)\n'}
+[3.125561] (-) TimerEvent: {}
+[3.226349] (-) TimerEvent: {}
+[3.327296] (-) TimerEvent: {}
+[3.428329] (-) TimerEvent: {}
+[3.468799] (py_publisher) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/py_publisher', 'build', '--build-base', '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/build', 'install', '--record', '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/seds/Desktop/TERRANCE/Terrance/src/py_publisher', 'env': {'SUDO_GID': '1000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'root', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/seds', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1131', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/seds/Desktop/TERRANCE/Terrance/install', 'SUDO_UID': '1000', 'ROS_DISTRO': 'iron', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'seds', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'SESSION_MANAGER': 'local/seds-desktop:@/tmp/.ICE-unix/1131,unix/seds-desktop:/tmp/.ICE-unix/1131', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/da4e0fc1_6a06_4683_b723_0654151dcda4', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.MD5TN2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.103', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SUDO_COMMAND': '/bin/bash', 'AMENT_PREFIX_PATH': '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/opt/ros/iron', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'SUDO_USER': 'seds', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/prefix_override:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController'}, 'shell': False}
+[3.526108] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[3.528434] (-) TimerEvent: {}
+[3.628067] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[3.628715] (-) TimerEvent: {}
+[3.729574] (-) TimerEvent: {}
+[3.750710] (cpp_stepper_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.829714] (-) TimerEvent: {}
+[3.887970] (cpp_stepper_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.929888] (-) TimerEvent: {}
+[4.030632] (-) TimerEvent: {}
+[4.131415] (-) TimerEvent: {}
+[4.232091] (-) TimerEvent: {}
+[4.332829] (-) TimerEvent: {}
+[4.433533] (-) TimerEvent: {}
+[4.534272] (-) TimerEvent: {}
+[4.635015] (-) TimerEvent: {}
+[4.699878] (py_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[4.702811] (py_publisher) StdoutLine: {'line': b'writing ../../build/py_publisher/py_publisher.egg-info/PKG-INFO\n'}
+[4.703946] (py_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/py_publisher/py_publisher.egg-info/dependency_links.txt\n'}
+[4.705067] (py_publisher) StdoutLine: {'line': b'writing entry points to ../../build/py_publisher/py_publisher.egg-info/entry_points.txt\n'}
+[4.705875] (py_publisher) StdoutLine: {'line': b'writing requirements to ../../build/py_publisher/py_publisher.egg-info/requires.txt\n'}
+[4.706552] (py_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/py_publisher/py_publisher.egg-info/top_level.txt\n'}
+[4.714899] (py_publisher) StdoutLine: {'line': b"reading manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'\n"}
+[4.717019] (py_publisher) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.719334] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)\n'}
+[4.720079] (py_publisher) StdoutLine: {'line': b"writing manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'\n"}
+[4.720803] (py_publisher) StdoutLine: {'line': b'running build\n'}
+[4.721271] (py_publisher) StdoutLine: {'line': b'running build_py\n'}
+[4.723016] (py_publisher) StdoutLine: {'line': b'running install\n'}
+[4.724519] (py_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[4.730721] (py_publisher) StdoutLine: {'line': b'running install_data\n'}
+[4.731414] (py_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.735203] (-) TimerEvent: {}
+[4.742380] (py_publisher) StdoutLine: {'line': b"removing '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.744143] (py_publisher) StdoutLine: {'line': b'Copying ../../build/py_publisher/py_publisher.egg-info to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info\n'}
+[4.746693] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.750669] (py_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[4.835304] (py_publisher) StdoutLine: {'line': b'Installing gamepad script to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/py_publisher\n'}
+[4.835912] (-) TimerEvent: {}
+[4.836973] (py_publisher) StdoutLine: {'line': b'Installing listener script to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/py_publisher\n'}
+[4.837889] (py_publisher) StdoutLine: {'line': b'Installing talker script to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/py_publisher\n'}
+[4.839619] (py_publisher) StdoutLine: {'line': b"writing list of installed files to '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/install.log'\n"}
+[4.936358] (-) TimerEvent: {}
+[4.977142] (py_publisher) CommandEnded: {'returncode': 0}
+[5.026253] (py_publisher) JobEnded: {'identifier': 'py_publisher', 'rc': 0}
+[5.036489] (-) TimerEvent: {}
+[5.137183] (-) TimerEvent: {}
+[5.237911] (-) TimerEvent: {}
+[5.338756] (-) TimerEvent: {}
+[5.439589] (-) TimerEvent: {}
+[5.473470] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.539784] (-) TimerEvent: {}
+[5.640521] (-) TimerEvent: {}
+[5.732525] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/iron/include  \n'}
+[5.740660] (-) TimerEvent: {}
+[5.841316] (-) TimerEvent: {}
+[5.942251] (-) TimerEvent: {}
+[6.043179] (-) TimerEvent: {}
+[6.143949] (-) TimerEvent: {}
+[6.160429] (cpp_stepper_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.244124] (-) TimerEvent: {}
+[6.344889] (-) TimerEvent: {}
+[6.445581] (-) TimerEvent: {}
+[6.546318] (-) TimerEvent: {}
+[6.647041] (-) TimerEvent: {}
+[6.747768] (-) TimerEvent: {}
+[6.848509] (-) TimerEvent: {}
+[6.900016] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rclcpp_components: 21.0.6 (/opt/ros/iron/share/rclcpp_components/cmake)\n'}
+[6.948674] (-) TimerEvent: {}
+[7.049355] (-) TimerEvent: {}
+[7.150047] (-) TimerEvent: {}
+[7.250786] (-) TimerEvent: {}
+[7.351484] (-) TimerEvent: {}
+[7.399151] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)\n'}
+[7.451653] (-) TimerEvent: {}
+[7.546351] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)\n'}
+[7.551899] (-) TimerEvent: {}
+[7.652616] (-) TimerEvent: {}
+[7.753280] (-) TimerEvent: {}
+[7.854001] (-) TimerEvent: {}
+[7.954682] (-) TimerEvent: {}
+[7.999571] (cpp_stepper_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[8.000688] (cpp_stepper_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include>\n'}
+[8.001093] (cpp_stepper_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[8.005363] (cpp_stepper_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.015016] (cpp_stepper_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[8.015560] (cpp_stepper_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[8.018191] (cpp_stepper_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.023830] (cpp_stepper_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.054898] (-) TimerEvent: {}
+[8.092452] (cpp_stepper_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[8.102799] (cpp_stepper_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller\n'}
+[8.142495] (cpp_stepper_controller) CommandEnded: {'returncode': 0}
+[8.144559] (cpp_stepper_controller) JobProgress: {'identifier': 'cpp_stepper_controller', 'progress': 'build'}
+[8.147097] (cpp_stepper_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller', '--', '-j4', '-l4'], 'cwd': '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/seds'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1131'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seds'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seds-desktop:@/tmp/.ICE-unix/1131,unix/seds-desktop:/tmp/.ICE-unix/1131'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/da4e0fc1_6a06_4683_b723_0654151dcda4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MD5TN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('SUDO_USER', 'seds'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron')]), 'shell': False}
+[8.155033] (-) TimerEvent: {}
+[8.256153] (-) TimerEvent: {}
+[8.328813] (cpp_stepper_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_stepper_controller\x1b[0m\n'}
+[8.356350] (-) TimerEvent: {}
+[8.423787] (cpp_stepper_controller) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o\x1b[0m\n'}
+[8.426892] (cpp_stepper_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o\x1b[0m\n'}
+[8.456685] (-) TimerEvent: {}
+[8.557774] (-) TimerEvent: {}
+[8.658518] (-) TimerEvent: {}
+[8.678501] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.679324] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:27:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of \xe2\x80\x98\x1b[01m\x1b[Kcontroller\x1b[m\x1b[K\xe2\x80\x99 before deduction of \xe2\x80\x98\x1b[01m\x1b[Kauto\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.679804] (cpp_stepper_controller) StderrLine: {'line': b'   27 |   auto controller = \x1b[01;31m\x1b[Kcontroller\x1b[m\x1b[K();\n'}
+[8.680255] (cpp_stepper_controller) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.687372] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:30:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcontrollerSubscriber\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.688123] (cpp_stepper_controller) StderrLine: {'line': b'   30 |   controller = \x1b[01;31m\x1b[KcontrollerSubscriber\x1b[m\x1b[K();\n'}
+[8.688818] (cpp_stepper_controller) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.697621] (cpp_stepper_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:104: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o] Error 1\n'}
+[8.698360] (cpp_stepper_controller) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[8.758689] (-) TimerEvent: {}
+[8.859374] (-) TimerEvent: {}
+[8.960065] (-) TimerEvent: {}
+[9.060790] (-) TimerEvent: {}
+[9.161486] (-) TimerEvent: {}
+[9.262241] (-) TimerEvent: {}
+[9.362975] (-) TimerEvent: {}
+[9.463677] (-) TimerEvent: {}
+[9.564388] (-) TimerEvent: {}
+[9.665070] (-) TimerEvent: {}
+[9.765825] (-) TimerEvent: {}
+[9.866572] (-) TimerEvent: {}
+[9.967275] (-) TimerEvent: {}
+[10.068040] (-) TimerEvent: {}
+[10.168855] (-) TimerEvent: {}
+[10.269626] (-) TimerEvent: {}
+[10.370461] (-) TimerEvent: {}
+[10.471253] (-) TimerEvent: {}
+[10.572058] (-) TimerEvent: {}
+[10.672844] (-) TimerEvent: {}
+[10.773630] (-) TimerEvent: {}
+[10.874561] (-) TimerEvent: {}
+[10.975429] (-) TimerEvent: {}
+[11.076297] (-) TimerEvent: {}
+[11.177061] (-) TimerEvent: {}
+[11.277969] (-) TimerEvent: {}
+[11.378733] (-) TimerEvent: {}
+[11.479518] (-) TimerEvent: {}
+[11.580341] (-) TimerEvent: {}
+[11.681083] (-) TimerEvent: {}
+[11.781843] (-) TimerEvent: {}
+[11.882616] (-) TimerEvent: {}
+[11.983493] (-) TimerEvent: {}
+[12.084286] (-) TimerEvent: {}
+[12.185079] (-) TimerEvent: {}
+[12.285827] (-) TimerEvent: {}
+[12.386608] (-) TimerEvent: {}
+[12.487430] (-) TimerEvent: {}
+[12.588229] (-) TimerEvent: {}
+[12.688959] (-) TimerEvent: {}
+[12.789736] (-) TimerEvent: {}
+[12.890597] (-) TimerEvent: {}
+[12.991376] (-) TimerEvent: {}
+[13.092092] (-) TimerEvent: {}
+[13.192904] (-) TimerEvent: {}
+[13.293703] (-) TimerEvent: {}
+[13.394561] (-) TimerEvent: {}
+[13.495366] (-) TimerEvent: {}
+[13.596158] (-) TimerEvent: {}
+[13.696974] (-) TimerEvent: {}
+[13.797724] (-) TimerEvent: {}
+[13.898551] (-) TimerEvent: {}
+[13.999336] (-) TimerEvent: {}
+[14.100100] (-) TimerEvent: {}
+[14.200897] (-) TimerEvent: {}
+[14.301690] (-) TimerEvent: {}
+[14.402519] (-) TimerEvent: {}
+[14.503347] (-) TimerEvent: {}
+[14.604207] (-) TimerEvent: {}
+[14.704958] (-) TimerEvent: {}
+[14.805719] (-) TimerEvent: {}
+[14.906546] (-) TimerEvent: {}
+[15.007324] (-) TimerEvent: {}
+[15.108099] (-) TimerEvent: {}
+[15.208898] (-) TimerEvent: {}
+[15.309687] (-) TimerEvent: {}
+[15.410519] (-) TimerEvent: {}
+[15.511295] (-) TimerEvent: {}
+[15.612072] (-) TimerEvent: {}
+[15.712880] (-) TimerEvent: {}
+[15.813669] (-) TimerEvent: {}
+[15.914527] (-) TimerEvent: {}
+[16.015304] (-) TimerEvent: {}
+[16.116224] (-) TimerEvent: {}
+[16.217099] (-) TimerEvent: {}
+[16.317851] (-) TimerEvent: {}
+[16.418658] (-) TimerEvent: {}
+[16.519448] (-) TimerEvent: {}
+[16.620256] (-) TimerEvent: {}
+[16.721025] (-) TimerEvent: {}
+[16.821797] (-) TimerEvent: {}
+[16.922628] (-) TimerEvent: {}
+[17.023410] (-) TimerEvent: {}
+[17.124233] (-) TimerEvent: {}
+[17.224995] (-) TimerEvent: {}
+[17.325746] (-) TimerEvent: {}
+[17.426586] (-) TimerEvent: {}
+[17.527404] (-) TimerEvent: {}
+[17.628277] (-) TimerEvent: {}
+[17.729056] (-) TimerEvent: {}
+[17.829819] (-) TimerEvent: {}
+[17.930649] (-) TimerEvent: {}
+[18.031444] (-) TimerEvent: {}
+[18.132285] (-) TimerEvent: {}
+[18.233035] (-) TimerEvent: {}
+[18.333809] (-) TimerEvent: {}
+[18.434645] (-) TimerEvent: {}
+[18.535428] (-) TimerEvent: {}
+[18.636263] (-) TimerEvent: {}
+[18.737020] (-) TimerEvent: {}
+[18.837780] (-) TimerEvent: {}
+[18.938614] (-) TimerEvent: {}
+[19.039391] (-) TimerEvent: {}
+[19.140210] (-) TimerEvent: {}
+[19.240980] (-) TimerEvent: {}
+[19.341726] (-) TimerEvent: {}
+[19.442536] (-) TimerEvent: {}
+[19.455318] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:20:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[19.456093] (cpp_stepper_controller) StderrLine: {'line': b'   20 | };\n'}
+[19.456626] (cpp_stepper_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[19.457219] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:4:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.457740] (cpp_stepper_controller) StderrLine: {'line': b'    4 | class controllerSubscriber : public rclcpp::Node \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[19.458158] (cpp_stepper_controller) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[19.482403] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KcontrollerSubscriber::controllerSubscriber()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.483156] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:7:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[19.483639] (cpp_stepper_controller) StderrLine: {'line': b'    7 |     \x1b[01;31m\x1b[Ksub_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::String(\n'}
+[19.484326] (cpp_stepper_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[19.485306] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:8:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcallbackFun\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KcontrollerSubscriber\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.485706] (cpp_stepper_controller) StderrLine: {'line': b'    8 |     "data", 10, std::bind(&controllerSubscriber::\x1b[01;31m\x1b[KcallbackFun\x1b[m\x1b[K, this, _1));\n'}
+[19.486065] (cpp_stepper_controller) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.486418] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:8:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[19.486816] (cpp_stepper_controller) StderrLine: {'line': b'    8 |     "data", 10, std::bind(&controllerSubscriber::callbackFun, this, \x1b[01;31m\x1b[K_1\x1b[m\x1b[K));\n'}
+[19.487143] (cpp_stepper_controller) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[19.487467] (cpp_stepper_controller) StderrLine: {'line': b'      |                                                                     \x1b[32m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\n'}
+[19.487783] (cpp_stepper_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[19.488111] (cpp_stepper_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[19.488601] (cpp_stepper_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[19.488938] (cpp_stepper_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[19.489282] (cpp_stepper_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[19.489625] (cpp_stepper_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167\x1b[m\x1b[K,\n'}
+[19.489958] (cpp_stepper_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:1\x1b[m\x1b[K:\n'}
+[19.490292] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:225:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[19.490617] (cpp_stepper_controller) StderrLine: {'line': b'  225 |     extern const _Placeholder<1> \x1b[01;36m\x1b[K_1\x1b[m\x1b[K;\n'}
+[19.491004] (cpp_stepper_controller) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[19.491441] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:7:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[19.491917] (cpp_stepper_controller) StderrLine: {'line': b'    7 |     sub_ = this->\x1b[01;31m\x1b[Kcreate_subscription<std_msgs::msg::String(\x1b[m\x1b[K\n'}
+[19.492449] (cpp_stepper_controller) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.492795] (cpp_stepper_controller) StderrLine: {'line': b'    8 | \x1b[01;31m\x1b[K    "data", 10, std::bind(&controllerSubscriber::callbackFun, this, _1))\x1b[m\x1b[K;\n'}
+[19.493222] (cpp_stepper_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.493571] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:9:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[19.493910] (cpp_stepper_controller) StderrLine: {'line': b'    9 |     \x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[19.494255] (cpp_stepper_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[19.494590] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:15:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kprivate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.494935] (cpp_stepper_controller) StderrLine: {'line': b'   15 |   \x1b[01;31m\x1b[Kprivate\x1b[m\x1b[K:\n'}
+[19.495266] (cpp_stepper_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[19.542683] (-) TimerEvent: {}
+[19.643441] (-) TimerEvent: {}
+[19.669433] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:11:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksecond\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.670537] (cpp_stepper_controller) StderrLine: {'line': b'   11 |     float \x1b[01;35m\x1b[Ksecond\x1b[m\x1b[K;\n'}
+[19.671165] (cpp_stepper_controller) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[19.671682] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:12:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kthird\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.672416] (cpp_stepper_controller) StderrLine: {'line': b'   12 |     float \x1b[01;35m\x1b[Kthird\x1b[m\x1b[K;\n'}
+[19.673197] (cpp_stepper_controller) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[19.673756] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:13:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kfourth\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.674459] (cpp_stepper_controller) StderrLine: {'line': b'   13 |     float \x1b[01;35m\x1b[Kfourth\x1b[m\x1b[K;\n'}
+[19.674996] (cpp_stepper_controller) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[19.675487] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:\x1b[m\x1b[K At global scope:\n'}
+[19.675946] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:20:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[19.676506] (cpp_stepper_controller) StderrLine: {'line': b'   20 | };\n'}
+[19.677004] (cpp_stepper_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[19.743649] (-) TimerEvent: {}
+[19.844443] (-) TimerEvent: {}
+[19.945390] (-) TimerEvent: {}
+[20.046162] (-) TimerEvent: {}
+[20.146939] (-) TimerEvent: {}
+[20.247812] (-) TimerEvent: {}
+[20.348607] (-) TimerEvent: {}
+[20.449344] (-) TimerEvent: {}
+[20.550118] (-) TimerEvent: {}
+[20.650903] (-) TimerEvent: {}
+[20.751736] (-) TimerEvent: {}
+[20.852527] (-) TimerEvent: {}
+[20.953282] (-) TimerEvent: {}
+[21.054054] (-) TimerEvent: {}
+[21.154850] (-) TimerEvent: {}
+[21.255831] (-) TimerEvent: {}
+[21.356701] (-) TimerEvent: {}
+[21.457484] (-) TimerEvent: {}
+[21.558303] (-) TimerEvent: {}
+[21.659084] (-) TimerEvent: {}
+[21.759923] (-) TimerEvent: {}
+[21.860732] (-) TimerEvent: {}
+[21.961484] (-) TimerEvent: {}
+[22.062244] (-) TimerEvent: {}
+[22.163020] (-) TimerEvent: {}
+[22.263858] (-) TimerEvent: {}
+[22.364665] (-) TimerEvent: {}
+[22.465473] (-) TimerEvent: {}
+[22.566387] (-) TimerEvent: {}
+[22.667273] (-) TimerEvent: {}
+[22.672094] (cpp_stepper_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:76: CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o] Error 1\n'}
+[22.673054] (cpp_stepper_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_stepper_controller.dir/all] Error 2\n'}
+[22.673991] (cpp_stepper_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[22.680285] (cpp_stepper_controller) CommandEnded: {'returncode': 2}
+[22.767448] (-) TimerEvent: {}
+[22.868761] (-) TimerEvent: {}
+[22.887844] (cpp_stepper_controller) JobEnded: {'identifier': 'cpp_stepper_controller', 'rc': 2}
+[22.899745] (-) EventReactorShutdown: {}

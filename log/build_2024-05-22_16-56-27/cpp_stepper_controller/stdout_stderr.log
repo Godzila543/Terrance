@@ -1,0 +1,45 @@
+[35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+In file included from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:9[m[K:
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:[m[K In constructor ‘[01m[KControllerSubscriber::ControllerSubscriber()[m[K’:
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_[m[K’?
+   11 |     [01;31m[Ksubscriber_[m[K = this->create_subscription<std_msgs::msg::String(
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[Ksubscription_[m[K
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:12:72:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::String_(const char [5], int, std::_Bind_helper<false, void (ControllerSubscriber::*)(const std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >&) const, ControllerSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+   12 |     "data", 10, std::bind(&ControllerSubscriber::callbackFun, this, _1)[01;31m[K)[m[K;
+      |                                                                        [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+                 from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:4[m[K,
+                 from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:9[m[K:
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:45:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::String_<ContainerAllocator>::String_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   45 |   explicit [01;36m[KString_[m[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:45:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:36:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::String_<ContainerAllocator>::String_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   36 |   explicit [01;36m[KString_[m[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:36:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::String_(const std_msgs::msg::String_<std::allocator<void> >&)[m[K’
+   32 | struct [01;36m[KString_[m[K
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::String_(std_msgs::msg::String_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+In file included from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:9[m[K:
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:11:25:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   11 |     subscriber_ = this->[01;31m[Kcreate_subscription<std_msgs::msg::String([m[K
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   12 | [01;31m[K    "data", 10, std::bind(&ControllerSubscriber::callbackFun, this, _1))[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:13:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   13 |     [01;31m[K)[m[K}
+      |     [01;31m[K^[m[K
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:28:21:[m[K [01;31m[Kerror: [m[K‘[01m[KcontrollerSubscriber[m[K’ was not declared in this scope; did you mean ‘[01m[KControllerSubscriber[m[K’?
+   28 |   auto controller = [01;31m[KcontrollerSubscriber[m[K();
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KControllerSubscriber[m[K
+gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:104: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_stepper_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -69,10 +69,24 @@ include CMakeFiles/cpp_stepper_controller.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpp_stepper_controller.dir/flags.make
 
+CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o: CMakeFiles/cpp_stepper_controller.dir/flags.make
+CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o: /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp
+CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o: CMakeFiles/cpp_stepper_controller.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o -MF CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o.d -o CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o -c /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp
+
+CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp > CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.i
+
+CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp -o CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.s
+
 CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o: CMakeFiles/cpp_stepper_controller.dir/flags.make
 CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o: /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp
 CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o: CMakeFiles/cpp_stepper_controller.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o -MF CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o.d -o CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o -c /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp
 
 CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.s: cmake_force
 CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o: CMakeFiles/cpp_stepper_controller.dir/flags.make
 CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o: /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp
 CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o: CMakeFiles/cpp_stepper_controller.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o -MF CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o.d -o CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o -c /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp
 
 CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.i: cmake_force
@@ -99,19 +113,98 @@ CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.s: cmake_fo
 
 # Object files for target cpp_stepper_controller
 cpp_stepper_controller_OBJECTS = \
+"CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o" \
 "CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o" \
 "CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o"
 
 # External object files for target cpp_stepper_controller
 cpp_stepper_controller_EXTERNAL_OBJECTS =
 
+cpp_stepper_controller: CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o
 cpp_stepper_controller: CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o
 cpp_stepper_controller: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o
 cpp_stepper_controller: CMakeFiles/cpp_stepper_controller.dir/build.make
+cpp_stepper_controller: /opt/ros/iron/lib/librclcpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstd_msgs__rosidl_generator_py.so
 cpp_stepper_controller: /usr/local/lib/libpigpio.so
 cpp_stepper_controller: /usr/lib/aarch64-linux-gnu/librt.a
+cpp_stepper_controller: /opt/ros/iron/lib/liblibstatistics_collector.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl_logging_interface.so
+cpp_stepper_controller: /opt/ros/iron/lib/librmw_implementation.so
+cpp_stepper_controller: /opt/ros/iron/lib/libament_index_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_introspection_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_introspection_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_generator_py.so
+cpp_stepper_controller: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_typesupport_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libtype_description_interfaces__rosidl_generator_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl_interfaces__rosidl_generator_py.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl_interfaces__rosidl_typesupport_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl_interfaces__rosidl_generator_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libservice_msgs__rosidl_generator_py.so
+cpp_stepper_controller: /opt/ros/iron/lib/libservice_msgs__rosidl_typesupport_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libservice_msgs__rosidl_generator_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcl_yaml_param_parser.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosgraph_msgs__rosidl_generator_py.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosgraph_msgs__rosidl_typesupport_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosgraph_msgs__rosidl_generator_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstatistics_msgs__rosidl_generator_py.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstatistics_msgs__rosidl_typesupport_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstatistics_msgs__rosidl_generator_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libtracetools.so
+cpp_stepper_controller: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosidl_typesupport_fastrtps_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosidl_typesupport_fastrtps_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libfastcdr.so.1.0.27
+cpp_stepper_controller: /opt/ros/iron/lib/librmw.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosidl_dynamic_typesupport.so
+cpp_stepper_controller: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosidl_typesupport_introspection_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosidl_typesupport_introspection_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosidl_typesupport_cpp.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstd_msgs__rosidl_typesupport_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libstd_msgs__rosidl_generator_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_generator_py.so
+cpp_stepper_controller: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/libbuiltin_interfaces__rosidl_generator_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosidl_typesupport_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcpputils.so
+cpp_stepper_controller: /opt/ros/iron/lib/librosidl_runtime_c.so
+cpp_stepper_controller: /opt/ros/iron/lib/librcutils.so
+cpp_stepper_controller: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 cpp_stepper_controller: CMakeFiles/cpp_stepper_controller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable cpp_stepper_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable cpp_stepper_controller"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_stepper_controller.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

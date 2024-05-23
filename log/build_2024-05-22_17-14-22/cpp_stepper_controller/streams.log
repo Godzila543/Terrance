@@ -1,0 +1,26 @@
+[0.089s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[0.281s] [35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[0.378s] [ 25%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[30.991s] [ 50%] [32m[1mLinking CXX executable cpp_stepper_controller[0m
+[32.775s] [100%] Built target cpp_stepper_controller
+[32.814s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[33.015s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --install /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller
+[33.042s] -- Install configuration: ""
+[33.043s] -- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller
+[33.079s] -- Set runtime path of "/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller" to ""
+[33.079s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/package_run_dependencies/cpp_stepper_controller
+[33.080s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/parent_prefix_path/cpp_stepper_controller
+[33.080s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.sh
+[33.081s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.dsv
+[33.081s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.sh
+[33.081s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.dsv
+[33.082s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.bash
+[33.082s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.sh
+[33.083s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.zsh
+[33.083s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.dsv
+[33.083s] -- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.dsv
+[33.085s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/packages/cpp_stepper_controller
+[33.085s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig.cmake
+[33.086s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig-version.cmake
+[33.086s] -- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.xml
+[33.093s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --install /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller

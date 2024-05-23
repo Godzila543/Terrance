@@ -10,6 +10,9 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_components REQUIRED)
+find_package(std_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 
@@ -20,6 +23,7 @@ file(GLOB SOURCES "src/*.cpp")
 
 
 add_executable(cpp_stepper_controller ${SOURCES})
+ament_target_dependencies(cpp_stepper_controller rclcpp std_msgs)
 target_include_directories(cpp_stepper_controller PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)

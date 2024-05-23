@@ -1,0 +1,393 @@
+[0.000000] (-) TimerEvent: {}
+[0.001067] (cpp_stepper_controller) JobQueued: {'identifier': 'cpp_stepper_controller', 'dependencies': OrderedDict()}
+[0.001943] (py_publisher) JobQueued: {'identifier': 'py_publisher', 'dependencies': OrderedDict()}
+[0.002037] (cpp_stepper_controller) JobStarted: {'identifier': 'cpp_stepper_controller'}
+[0.036173] (py_publisher) JobStarted: {'identifier': 'py_publisher'}
+[0.078724] (cpp_stepper_controller) JobProgress: {'identifier': 'cpp_stepper_controller', 'progress': 'cmake'}
+[0.081820] (cpp_stepper_controller) JobProgress: {'identifier': 'cpp_stepper_controller', 'progress': 'build'}
+[0.084475] (cpp_stepper_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller', '--', '-j4', '-l4'], 'cwd': '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/seds'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1131'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seds'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seds-desktop:@/tmp/.ICE-unix/1131,unix/seds-desktop:/tmp/.ICE-unix/1131'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/da4e0fc1_6a06_4683_b723_0654151dcda4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MD5TN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('SUDO_USER', 'seds'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron')]), 'shell': False}
+[0.102287] (-) TimerEvent: {}
+[0.203447] (-) TimerEvent: {}
+[0.284380] (cpp_stepper_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_stepper_controller\x1b[0m\n'}
+[0.303649] (-) TimerEvent: {}
+[0.381196] (cpp_stepper_controller) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o\x1b[0m\n'}
+[0.403829] (-) TimerEvent: {}
+[0.504707] (-) TimerEvent: {}
+[0.606215] (-) TimerEvent: {}
+[0.706906] (-) TimerEvent: {}
+[0.807591] (-) TimerEvent: {}
+[0.908273] (-) TimerEvent: {}
+[1.009008] (-) TimerEvent: {}
+[1.109725] (-) TimerEvent: {}
+[1.210519] (-) TimerEvent: {}
+[1.311622] (-) TimerEvent: {}
+[1.412455] (-) TimerEvent: {}
+[1.513481] (-) TimerEvent: {}
+[1.614218] (-) TimerEvent: {}
+[1.714934] (-) TimerEvent: {}
+[1.815758] (-) TimerEvent: {}
+[1.916476] (-) TimerEvent: {}
+[2.017261] (-) TimerEvent: {}
+[2.117935] (-) TimerEvent: {}
+[2.218634] (-) TimerEvent: {}
+[2.319895] (-) TimerEvent: {}
+[2.420729] (-) TimerEvent: {}
+[2.521557] (-) TimerEvent: {}
+[2.622319] (-) TimerEvent: {}
+[2.723135] (-) TimerEvent: {}
+[2.824016] (-) TimerEvent: {}
+[2.924790] (-) TimerEvent: {}
+[3.025610] (-) TimerEvent: {}
+[3.126490] (-) TimerEvent: {}
+[3.227446] (-) TimerEvent: {}
+[3.328957] (-) TimerEvent: {}
+[3.389798] (py_publisher) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/py_publisher', 'build', '--build-base', '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/build', 'install', '--record', '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/seds/Desktop/TERRANCE/Terrance/src/py_publisher', 'env': {'SUDO_GID': '1000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'root', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/seds', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1131', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/seds/Desktop/TERRANCE/Terrance/install', 'SUDO_UID': '1000', 'ROS_DISTRO': 'iron', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'seds', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'SESSION_MANAGER': 'local/seds-desktop:@/tmp/.ICE-unix/1131,unix/seds-desktop:/tmp/.ICE-unix/1131', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/da4e0fc1_6a06_4683_b723_0654151dcda4', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.MD5TN2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.103', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SUDO_COMMAND': '/bin/bash', 'AMENT_PREFIX_PATH': '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/opt/ros/iron', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'SUDO_USER': 'seds', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/prefix_override:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController'}, 'shell': False}
+[3.429130] (-) TimerEvent: {}
+[3.529928] (-) TimerEvent: {}
+[3.630725] (-) TimerEvent: {}
+[3.731589] (-) TimerEvent: {}
+[3.832404] (-) TimerEvent: {}
+[3.933819] (-) TimerEvent: {}
+[4.034587] (-) TimerEvent: {}
+[4.135332] (-) TimerEvent: {}
+[4.236102] (-) TimerEvent: {}
+[4.337001] (-) TimerEvent: {}
+[4.437759] (-) TimerEvent: {}
+[4.538532] (-) TimerEvent: {}
+[4.639322] (-) TimerEvent: {}
+[4.740246] (-) TimerEvent: {}
+[4.841057] (-) TimerEvent: {}
+[4.941835] (-) TimerEvent: {}
+[4.972073] (py_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[4.976094] (py_publisher) StdoutLine: {'line': b'writing ../../build/py_publisher/py_publisher.egg-info/PKG-INFO\n'}
+[4.977652] (py_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/py_publisher/py_publisher.egg-info/dependency_links.txt\n'}
+[4.982328] (py_publisher) StdoutLine: {'line': b'writing entry points to ../../build/py_publisher/py_publisher.egg-info/entry_points.txt\n'}
+[4.983632] (py_publisher) StdoutLine: {'line': b'writing requirements to ../../build/py_publisher/py_publisher.egg-info/requires.txt\n'}
+[4.984295] (py_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/py_publisher/py_publisher.egg-info/top_level.txt\n'}
+[4.992342] (py_publisher) StdoutLine: {'line': b"reading manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'\n"}
+[4.995908] (py_publisher) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.999020] (py_publisher) StdoutLine: {'line': b"writing manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'\n"}
+[4.999906] (py_publisher) StdoutLine: {'line': b'running build\n'}
+[5.000782] (py_publisher) StdoutLine: {'line': b'running build_py\n'}
+[5.002624] (py_publisher) StdoutLine: {'line': b'running install\n'}
+[5.004108] (py_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[5.011479] (py_publisher) StdoutLine: {'line': b'running install_data\n'}
+[5.012331] (py_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.024979] (py_publisher) StdoutLine: {'line': b"removing '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.026968] (py_publisher) StdoutLine: {'line': b'Copying ../../build/py_publisher/py_publisher.egg-info to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info\n'}
+[5.035187] (py_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[5.041997] (-) TimerEvent: {}
+[5.133042] (py_publisher) StdoutLine: {'line': b'Installing gamepad script to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/py_publisher\n'}
+[5.134367] (py_publisher) StdoutLine: {'line': b'Installing listener script to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/py_publisher\n'}
+[5.135774] (py_publisher) StdoutLine: {'line': b'Installing talker script to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/py_publisher\n'}
+[5.138349] (py_publisher) StdoutLine: {'line': b"writing list of installed files to '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/install.log'\n"}
+[5.142315] (-) TimerEvent: {}
+[5.244727] (-) TimerEvent: {}
+[5.291268] (py_publisher) CommandEnded: {'returncode': 0}
+[5.344921] (-) TimerEvent: {}
+[5.360537] (py_publisher) JobEnded: {'identifier': 'py_publisher', 'rc': 0}
+[5.445166] (-) TimerEvent: {}
+[5.545952] (-) TimerEvent: {}
+[5.646823] (-) TimerEvent: {}
+[5.747613] (-) TimerEvent: {}
+[5.848399] (-) TimerEvent: {}
+[5.949226] (-) TimerEvent: {}
+[6.049972] (-) TimerEvent: {}
+[6.150736] (-) TimerEvent: {}
+[6.251521] (-) TimerEvent: {}
+[6.352298] (-) TimerEvent: {}
+[6.453164] (-) TimerEvent: {}
+[6.553906] (-) TimerEvent: {}
+[6.654676] (-) TimerEvent: {}
+[6.755440] (-) TimerEvent: {}
+[6.856205] (-) TimerEvent: {}
+[6.957022] (-) TimerEvent: {}
+[7.057938] (-) TimerEvent: {}
+[7.158720] (-) TimerEvent: {}
+[7.259493] (-) TimerEvent: {}
+[7.360260] (-) TimerEvent: {}
+[7.461280] (-) TimerEvent: {}
+[7.562051] (-) TimerEvent: {}
+[7.662844] (-) TimerEvent: {}
+[7.763624] (-) TimerEvent: {}
+[7.864414] (-) TimerEvent: {}
+[7.965267] (-) TimerEvent: {}
+[8.066027] (-) TimerEvent: {}
+[8.166783] (-) TimerEvent: {}
+[8.267566] (-) TimerEvent: {}
+[8.368341] (-) TimerEvent: {}
+[8.469220] (-) TimerEvent: {}
+[8.570012] (-) TimerEvent: {}
+[8.670752] (-) TimerEvent: {}
+[8.771519] (-) TimerEvent: {}
+[8.872291] (-) TimerEvent: {}
+[8.973217] (-) TimerEvent: {}
+[9.074001] (-) TimerEvent: {}
+[9.174769] (-) TimerEvent: {}
+[9.275582] (-) TimerEvent: {}
+[9.376362] (-) TimerEvent: {}
+[9.477253] (-) TimerEvent: {}
+[9.578031] (-) TimerEvent: {}
+[9.678813] (-) TimerEvent: {}
+[9.779609] (-) TimerEvent: {}
+[9.880457] (-) TimerEvent: {}
+[9.981295] (-) TimerEvent: {}
+[10.082063] (-) TimerEvent: {}
+[10.182835] (-) TimerEvent: {}
+[10.283660] (-) TimerEvent: {}
+[10.384529] (-) TimerEvent: {}
+[10.485358] (-) TimerEvent: {}
+[10.586129] (-) TimerEvent: {}
+[10.686924] (-) TimerEvent: {}
+[10.787688] (-) TimerEvent: {}
+[10.888504] (-) TimerEvent: {}
+[10.989342] (-) TimerEvent: {}
+[11.090126] (-) TimerEvent: {}
+[11.190913] (-) TimerEvent: {}
+[11.291692] (-) TimerEvent: {}
+[11.392498] (-) TimerEvent: {}
+[11.493350] (-) TimerEvent: {}
+[11.594141] (-) TimerEvent: {}
+[11.694949] (-) TimerEvent: {}
+[11.795746] (-) TimerEvent: {}
+[11.896547] (-) TimerEvent: {}
+[11.997351] (-) TimerEvent: {}
+[12.098121] (-) TimerEvent: {}
+[12.198917] (-) TimerEvent: {}
+[12.299713] (-) TimerEvent: {}
+[12.400470] (-) TimerEvent: {}
+[12.501344] (-) TimerEvent: {}
+[12.602127] (-) TimerEvent: {}
+[12.702886] (-) TimerEvent: {}
+[12.803650] (-) TimerEvent: {}
+[12.904384] (-) TimerEvent: {}
+[13.005240] (-) TimerEvent: {}
+[13.105996] (-) TimerEvent: {}
+[13.206741] (-) TimerEvent: {}
+[13.307508] (-) TimerEvent: {}
+[13.408275] (-) TimerEvent: {}
+[13.509109] (-) TimerEvent: {}
+[13.609937] (-) TimerEvent: {}
+[13.710717] (-) TimerEvent: {}
+[13.811490] (-) TimerEvent: {}
+[13.912250] (-) TimerEvent: {}
+[14.013064] (-) TimerEvent: {}
+[14.113893] (-) TimerEvent: {}
+[14.214723] (-) TimerEvent: {}
+[14.315567] (-) TimerEvent: {}
+[14.416377] (-) TimerEvent: {}
+[14.517248] (-) TimerEvent: {}
+[14.618000] (-) TimerEvent: {}
+[14.718792] (-) TimerEvent: {}
+[14.819583] (-) TimerEvent: {}
+[14.920349] (-) TimerEvent: {}
+[15.021217] (-) TimerEvent: {}
+[15.121994] (-) TimerEvent: {}
+[15.222764] (-) TimerEvent: {}
+[15.323543] (-) TimerEvent: {}
+[15.424356] (-) TimerEvent: {}
+[15.525342] (-) TimerEvent: {}
+[15.626104] (-) TimerEvent: {}
+[15.726892] (-) TimerEvent: {}
+[15.827672] (-) TimerEvent: {}
+[15.928438] (-) TimerEvent: {}
+[16.029287] (-) TimerEvent: {}
+[16.130055] (-) TimerEvent: {}
+[16.230827] (-) TimerEvent: {}
+[16.331609] (-) TimerEvent: {}
+[16.432383] (-) TimerEvent: {}
+[16.533272] (-) TimerEvent: {}
+[16.634052] (-) TimerEvent: {}
+[16.734817] (-) TimerEvent: {}
+[16.835580] (-) TimerEvent: {}
+[16.936342] (-) TimerEvent: {}
+[17.037160] (-) TimerEvent: {}
+[17.138008] (-) TimerEvent: {}
+[17.238799] (-) TimerEvent: {}
+[17.339579] (-) TimerEvent: {}
+[17.440400] (-) TimerEvent: {}
+[17.541268] (-) TimerEvent: {}
+[17.642119] (-) TimerEvent: {}
+[17.742913] (-) TimerEvent: {}
+[17.843696] (-) TimerEvent: {}
+[17.944454] (-) TimerEvent: {}
+[18.045302] (-) TimerEvent: {}
+[18.146050] (-) TimerEvent: {}
+[18.246848] (-) TimerEvent: {}
+[18.347591] (-) TimerEvent: {}
+[18.448372] (-) TimerEvent: {}
+[18.549186] (-) TimerEvent: {}
+[18.649970] (-) TimerEvent: {}
+[18.750728] (-) TimerEvent: {}
+[18.851551] (-) TimerEvent: {}
+[18.952488] (-) TimerEvent: {}
+[19.053216] (-) TimerEvent: {}
+[19.153931] (-) TimerEvent: {}
+[19.254642] (-) TimerEvent: {}
+[19.355382] (-) TimerEvent: {}
+[19.456227] (-) TimerEvent: {}
+[19.557213] (-) TimerEvent: {}
+[19.658014] (-) TimerEvent: {}
+[19.758795] (-) TimerEvent: {}
+[19.859588] (-) TimerEvent: {}
+[19.960353] (-) TimerEvent: {}
+[20.061203] (-) TimerEvent: {}
+[20.162054] (-) TimerEvent: {}
+[20.262842] (-) TimerEvent: {}
+[20.363742] (-) TimerEvent: {}
+[20.465441] (-) TimerEvent: {}
+[20.566774] (-) TimerEvent: {}
+[20.668338] (-) TimerEvent: {}
+[20.769134] (-) TimerEvent: {}
+[20.869896] (-) TimerEvent: {}
+[20.970625] (-) TimerEvent: {}
+[21.071398] (-) TimerEvent: {}
+[21.172213] (-) TimerEvent: {}
+[21.272997] (-) TimerEvent: {}
+[21.373732] (-) TimerEvent: {}
+[21.474453] (-) TimerEvent: {}
+[21.575204] (-) TimerEvent: {}
+[21.675976] (-) TimerEvent: {}
+[21.776816] (-) TimerEvent: {}
+[21.877553] (-) TimerEvent: {}
+[21.978298] (-) TimerEvent: {}
+[22.079070] (-) TimerEvent: {}
+[22.179831] (-) TimerEvent: {}
+[22.280692] (-) TimerEvent: {}
+[22.381435] (-) TimerEvent: {}
+[22.482167] (-) TimerEvent: {}
+[22.582898] (-) TimerEvent: {}
+[22.683666] (-) TimerEvent: {}
+[22.784476] (-) TimerEvent: {}
+[22.885273] (-) TimerEvent: {}
+[22.986074] (-) TimerEvent: {}
+[23.086819] (-) TimerEvent: {}
+[23.187531] (-) TimerEvent: {}
+[23.288384] (-) TimerEvent: {}
+[23.389152] (-) TimerEvent: {}
+[23.489872] (-) TimerEvent: {}
+[23.590691] (-) TimerEvent: {}
+[23.691544] (-) TimerEvent: {}
+[23.792289] (-) TimerEvent: {}
+[23.893074] (-) TimerEvent: {}
+[23.993791] (-) TimerEvent: {}
+[24.094541] (-) TimerEvent: {}
+[24.195294] (-) TimerEvent: {}
+[24.296075] (-) TimerEvent: {}
+[24.396870] (-) TimerEvent: {}
+[24.497655] (-) TimerEvent: {}
+[24.598411] (-) TimerEvent: {}
+[24.699174] (-) TimerEvent: {}
+[24.799956] (-) TimerEvent: {}
+[24.900794] (-) TimerEvent: {}
+[25.001551] (-) TimerEvent: {}
+[25.102328] (-) TimerEvent: {}
+[25.203065] (-) TimerEvent: {}
+[25.303815] (-) TimerEvent: {}
+[25.404579] (-) TimerEvent: {}
+[25.505419] (-) TimerEvent: {}
+[25.606175] (-) TimerEvent: {}
+[25.706915] (-) TimerEvent: {}
+[25.807640] (-) TimerEvent: {}
+[25.908390] (-) TimerEvent: {}
+[26.009239] (-) TimerEvent: {}
+[26.109997] (-) TimerEvent: {}
+[26.210712] (-) TimerEvent: {}
+[26.311449] (-) TimerEvent: {}
+[26.412186] (-) TimerEvent: {}
+[26.513034] (-) TimerEvent: {}
+[26.613759] (-) TimerEvent: {}
+[26.714508] (-) TimerEvent: {}
+[26.815263] (-) TimerEvent: {}
+[26.916029] (-) TimerEvent: {}
+[27.016792] (-) TimerEvent: {}
+[27.117586] (-) TimerEvent: {}
+[27.218360] (-) TimerEvent: {}
+[27.319119] (-) TimerEvent: {}
+[27.419896] (-) TimerEvent: {}
+[27.520669] (-) TimerEvent: {}
+[27.621466] (-) TimerEvent: {}
+[27.722221] (-) TimerEvent: {}
+[27.822954] (-) TimerEvent: {}
+[27.923705] (-) TimerEvent: {}
+[28.024461] (-) TimerEvent: {}
+[28.125262] (-) TimerEvent: {}
+[28.226077] (-) TimerEvent: {}
+[28.326835] (-) TimerEvent: {}
+[28.427594] (-) TimerEvent: {}
+[28.528356] (-) TimerEvent: {}
+[28.629157] (-) TimerEvent: {}
+[28.730013] (-) TimerEvent: {}
+[28.831175] (-) TimerEvent: {}
+[28.932107] (-) TimerEvent: {}
+[29.033165] (-) TimerEvent: {}
+[29.134110] (-) TimerEvent: {}
+[29.234875] (-) TimerEvent: {}
+[29.335596] (-) TimerEvent: {}
+[29.436361] (-) TimerEvent: {}
+[29.537200] (-) TimerEvent: {}
+[29.637943] (-) TimerEvent: {}
+[29.738686] (-) TimerEvent: {}
+[29.839464] (-) TimerEvent: {}
+[29.940235] (-) TimerEvent: {}
+[30.041087] (-) TimerEvent: {}
+[30.141821] (-) TimerEvent: {}
+[30.242569] (-) TimerEvent: {}
+[30.343339] (-) TimerEvent: {}
+[30.444294] (-) TimerEvent: {}
+[30.546033] (-) TimerEvent: {}
+[30.646871] (-) TimerEvent: {}
+[30.747916] (-) TimerEvent: {}
+[30.849228] (-) TimerEvent: {}
+[30.949917] (-) TimerEvent: {}
+[30.994389] (cpp_stepper_controller) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable cpp_stepper_controller\x1b[0m\n'}
+[31.050116] (-) TimerEvent: {}
+[31.151046] (-) TimerEvent: {}
+[31.252052] (-) TimerEvent: {}
+[31.352901] (-) TimerEvent: {}
+[31.453650] (-) TimerEvent: {}
+[31.554598] (-) TimerEvent: {}
+[31.655689] (-) TimerEvent: {}
+[31.756953] (-) TimerEvent: {}
+[31.857835] (-) TimerEvent: {}
+[31.958817] (-) TimerEvent: {}
+[32.060077] (-) TimerEvent: {}
+[32.160956] (-) TimerEvent: {}
+[32.261762] (-) TimerEvent: {}
+[32.362478] (-) TimerEvent: {}
+[32.463183] (-) TimerEvent: {}
+[32.563847] (-) TimerEvent: {}
+[32.664653] (-) TimerEvent: {}
+[32.766018] (-) TimerEvent: {}
+[32.867228] (-) TimerEvent: {}
+[32.968270] (-) TimerEvent: {}
+[33.011063] (cpp_stepper_controller) StdoutLine: {'line': b'[100%] Built target cpp_stepper_controller\n'}
+[33.051944] (cpp_stepper_controller) CommandEnded: {'returncode': 0}
+[33.068534] (-) TimerEvent: {}
+[33.169834] (-) TimerEvent: {}
+[33.210862] (cpp_stepper_controller) JobProgress: {'identifier': 'cpp_stepper_controller', 'progress': 'install'}
+[33.244818] (cpp_stepper_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller'], 'cwd': '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/seds'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1131'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seds'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seds-desktop:@/tmp/.ICE-unix/1131,unix/seds-desktop:/tmp/.ICE-unix/1131'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/da4e0fc1_6a06_4683_b723_0654151dcda4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MD5TN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SUDO_COMMAND', '/bin/bash'), ('AMENT_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('SUDO_USER', 'seds'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron')]), 'shell': False}
+[33.270073] (-) TimerEvent: {}
+[33.278814] (cpp_stepper_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.281624] (cpp_stepper_controller) StdoutLine: {'line': b'-- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller\n'}
+[33.316424] (cpp_stepper_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller" to ""\n'}
+[33.317084] (cpp_stepper_controller) StdoutLine: {'line': b'-- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/package_run_dependencies/cpp_stepper_controller\n'}
+[33.318530] (cpp_stepper_controller) StdoutLine: {'line': b'-- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/parent_prefix_path/cpp_stepper_controller\n'}
+[33.320044] (cpp_stepper_controller) StdoutLine: {'line': b'-- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.sh\n'}
+[33.321474] (cpp_stepper_controller) StdoutLine: {'line': b'-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.dsv\n'}
+[33.322031] (cpp_stepper_controller) StdoutLine: {'line': b'-- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.sh\n'}
+[33.323182] (cpp_stepper_controller) StdoutLine: {'line': b'-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.dsv\n'}
+[33.323637] (cpp_stepper_controller) StdoutLine: {'line': b'-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.bash\n'}
+[33.324038] (cpp_stepper_controller) StdoutLine: {'line': b'-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.sh\n'}
+[33.324417] (cpp_stepper_controller) StdoutLine: {'line': b'-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.zsh\n'}
+[33.324843] (cpp_stepper_controller) StdoutLine: {'line': b'-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.dsv\n'}
+[33.325261] (cpp_stepper_controller) StdoutLine: {'line': b'-- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.dsv\n'}
+[33.326620] (cpp_stepper_controller) StdoutLine: {'line': b'-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/packages/cpp_stepper_controller\n'}
+[33.327115] (cpp_stepper_controller) StdoutLine: {'line': b'-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig.cmake\n'}
+[33.327507] (cpp_stepper_controller) StdoutLine: {'line': b'-- Up-to-date: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig-version.cmake\n'}
+[33.327922] (cpp_stepper_controller) StdoutLine: {'line': b'-- Installing: /home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.xml\n'}
+[33.333885] (cpp_stepper_controller) CommandEnded: {'returncode': 0}
+[33.370227] (-) TimerEvent: {}
+[33.471308] (-) TimerEvent: {}
+[33.558105] (cpp_stepper_controller) JobEnded: {'identifier': 'cpp_stepper_controller', 'rc': 0}
+[33.561014] (-) EventReactorShutdown: {}

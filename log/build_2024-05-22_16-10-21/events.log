@@ -1,0 +1,180 @@
+[0.000000] (-) TimerEvent: {}
+[0.001475] (-) JobUnselected: {'identifier': 'py_publisher'}
+[0.001604] (cpp_stepper_controller) JobQueued: {'identifier': 'cpp_stepper_controller', 'dependencies': OrderedDict()}
+[0.002110] (cpp_stepper_controller) JobStarted: {'identifier': 'cpp_stepper_controller'}
+[0.046131] (cpp_stepper_controller) JobProgress: {'identifier': 'cpp_stepper_controller', 'progress': 'cmake'}
+[0.051303] (cpp_stepper_controller) JobProgress: {'identifier': 'cpp_stepper_controller', 'progress': 'build'}
+[0.054243] (cpp_stepper_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller', '--', '-j4', '-l4'], 'cwd': '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seds'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/seds'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1131'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'seds'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seds'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seds-desktop:@/tmp/.ICE-unix/1131,unix/seds-desktop:/tmp/.ICE-unix/1131'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/da4e0fc1_6a06_4683_b723_0654151dcda4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MD5TN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a6621cd60ea4c027a29d686c664beb58'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller:/home/seds/Desktop/TERRANCE/Terrance/install/cpp_StepperController:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron')]), 'shell': False}
+[0.099042] (-) TimerEvent: {}
+[0.200211] (-) TimerEvent: {}
+[0.301384] (-) TimerEvent: {}
+[0.402072] (-) TimerEvent: {}
+[0.404769] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.5 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.502258] (-) TimerEvent: {}
+[0.603116] (-) TimerEvent: {}
+[0.703974] (-) TimerEvent: {}
+[0.804930] (-) TimerEvent: {}
+[0.819521] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):\n'}
+[0.820294] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[0.820737] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.821093] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:24 (stamp)\n'}
+[0.821412] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.821713] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.822012] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.822311] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[0.822671] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[0.823044] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[0.905095] (-) TimerEvent: {}
+[1.005821] (-) TimerEvent: {}
+[1.106734] (-) TimerEvent: {}
+[1.121394] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/ament_cmake_uninstall_target-extras.cmake:28 (configure_file):\n'}
+[1.121927] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[1.122235] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.122544] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[1.122865] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[1.123162] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[1.123508] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.123795] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[1.124085] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[1.176702] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_test/cmake/ament_cmake_test-extras.cmake:34 (configure_file):\n'}
+[1.177322] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[1.177803] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.178209] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_test/cmake/ament_cmake_testConfig.cmake:41 (include)\n'}
+[1.178561] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[1.178925] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[1.179295] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.179752] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[1.180133] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[1.187636] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rclcpp: 21.0.6 (/opt/ros/iron/share/rclcpp/cmake)\n'}
+[1.206835] (-) TimerEvent: {}
+[1.307511] (-) TimerEvent: {}
+[1.408182] (-) TimerEvent: {}
+[1.433157] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[1.486233] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[1.508359] (-) TimerEvent: {}
+[1.563451] (cpp_stepper_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.608523] (-) TimerEvent: {}
+[1.653080] (cpp_stepper_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.708708] (-) TimerEvent: {}
+[1.809387] (-) TimerEvent: {}
+[1.910215] (-) TimerEvent: {}
+[2.011080] (-) TimerEvent: {}
+[2.111818] (-) TimerEvent: {}
+[2.212539] (-) TimerEvent: {}
+[2.313255] (-) TimerEvent: {}
+[2.351169] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)\n'}
+[2.362047] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.413442] (-) TimerEvent: {}
+[2.514278] (-) TimerEvent: {}
+[2.614973] (-) TimerEvent: {}
+[2.715749] (-) TimerEvent: {}
+[2.816456] (-) TimerEvent: {}
+[2.917653] (-) TimerEvent: {}
+[3.018746] (-) TimerEvent: {}
+[3.119460] (-) TimerEvent: {}
+[3.220137] (-) TimerEvent: {}
+[3.320802] (-) TimerEvent: {}
+[3.421496] (-) TimerEvent: {}
+[3.481706] (cpp_stepper_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.521671] (-) TimerEvent: {}
+[3.622410] (-) TimerEvent: {}
+[3.723107] (-) TimerEvent: {}
+[3.823838] (-) TimerEvent: {}
+[3.924611] (-) TimerEvent: {}
+[4.025504] (-) TimerEvent: {}
+[4.126353] (-) TimerEvent: {}
+[4.227315] (-) TimerEvent: {}
+[4.328162] (-) TimerEvent: {}
+[4.428966] (-) TimerEvent: {}
+[4.529793] (-) TimerEvent: {}
+[4.582836] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found rclcpp_components: 21.0.6 (/opt/ros/iron/share/rclcpp_components/cmake)\n'}
+[4.630027] (-) TimerEvent: {}
+[4.731016] (-) TimerEvent: {}
+[4.831897] (-) TimerEvent: {}
+[4.932715] (-) TimerEvent: {}
+[4.991009] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)\n'}
+[5.033034] (-) TimerEvent: {}
+[5.134444] (-) TimerEvent: {}
+[5.146226] (cpp_stepper_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)\n'}
+[5.152513] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):\n'}
+[5.153326] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[5.154243] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.154596] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:73 (stamp)\n'}
+[5.155004] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[5.155383] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)\n'}
+[5.155750] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:48 (ament_lint_auto_find_test_dependencies)\n'}
+[5.156074] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[5.156397] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[5.156708] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):\n'}
+[5.157034] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[5.157349] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.157658] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:73 (stamp)\n'}
+[5.157967] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[5.158307] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)\n'}
+[5.158644] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:51 (ament_package)\n'}
+[5.159863] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[5.160244] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[5.160569] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):\n'}
+[5.160964] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[5.161943] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.162639] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake:37 (stamp)\n'}
+[5.163311] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:20 (ament_environment_hooks)\n'}
+[5.163928] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[5.164825] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)\n'}
+[5.166471] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:51 (ament_package)\n'}
+[5.167440] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[5.168056] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[5.168556] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):\n'}
+[5.169057] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[5.169401] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.169728] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake:37 (stamp)\n'}
+[5.170117] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:20 (ament_environment_hooks)\n'}
+[5.171895] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[5.172499] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)\n'}
+[5.172841] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:51 (ament_package)\n'}
+[5.173181] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[5.173467] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[5.173756] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake:73 (configure_file):\n'}
+[5.174356] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[5.174757] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.175067] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:26 (ament_generate_package_environment)\n'}
+[5.175474] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[5.175904] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)\n'}
+[5.176341] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:51 (ament_package)\n'}
+[5.176697] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[5.176983] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[5.177332] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake:73 (configure_file):\n'}
+[5.177650] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[5.177946] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.178226] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:26 (ament_generate_package_environment)\n'}
+[5.178544] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[5.178967] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)\n'}
+[5.179829] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:51 (ament_package)\n'}
+[5.180379] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[5.181271] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[5.182131] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake:73 (configure_file):\n'}
+[5.182725] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[5.183271] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.183818] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:26 (ament_generate_package_environment)\n'}
+[5.184502] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[5.185078] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)\n'}
+[5.185995] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:51 (ament_package)\n'}
+[5.186760] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[5.187228] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[5.187971] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):\n'}
+[5.188326] (cpp_stepper_controller) StderrLine: {'line': b'  Operation not permitted\n'}
+[5.188642] (cpp_stepper_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.188960] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:135 (stamp)\n'}
+[5.189505] (cpp_stepper_controller) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:68 (_ament_package)\n'}
+[5.190967] (cpp_stepper_controller) StderrLine: {'line': b'  CMakeLists.txt:51 (ament_package)\n'}
+[5.192099] (cpp_stepper_controller) StderrLine: {'line': b'\n'}
+[5.192756] (cpp_stepper_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[5.193462] (cpp_stepper_controller) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.194556] (cpp_stepper_controller) StdoutLine: {'line': b'See also "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles/CMakeOutput.log".\n'}
+[5.219705] (cpp_stepper_controller) StderrLine: {'line': b'gmake: *** [Makefile:294: cmake_check_build_system] Error 1\n'}
+[5.227707] (cpp_stepper_controller) CommandEnded: {'returncode': 2}
+[5.234645] (-) TimerEvent: {}
+[5.337250] (-) TimerEvent: {}
+[5.438250] (-) TimerEvent: {}
+[5.473373] (cpp_stepper_controller) JobEnded: {'identifier': 'cpp_stepper_controller', 'rc': 2}
+[5.485145] (-) EventReactorShutdown: {}

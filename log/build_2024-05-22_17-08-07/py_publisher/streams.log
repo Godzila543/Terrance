@@ -1,0 +1,24 @@
+[3.339s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/src/py_publisher': PYTHONPATH=/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/prefix_override:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_publisher build --build-base /home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/build install --record /home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/install.log --single-version-externally-managed install_data
+[4.937s] running egg_info
+[4.944s] writing ../../build/py_publisher/py_publisher.egg-info/PKG-INFO
+[4.945s] writing dependency_links to ../../build/py_publisher/py_publisher.egg-info/dependency_links.txt
+[4.946s] writing entry points to ../../build/py_publisher/py_publisher.egg-info/entry_points.txt
+[4.949s] writing requirements to ../../build/py_publisher/py_publisher.egg-info/requires.txt
+[4.949s] writing top-level names to ../../build/py_publisher/py_publisher.egg-info/top_level.txt
+[4.959s] reading manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'
+[4.961s] adding license file 'LICENSE'
+[4.965s] writing manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'
+[4.965s] running build
+[4.966s] running build_py
+[4.968s] running install
+[4.970s] running install_lib
+[4.977s] running install_data
+[4.978s] running install_egg_info
+[4.990s] removing '/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[4.992s] Copying ../../build/py_publisher/py_publisher.egg-info to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info
+[5.000s] running install_scripts
+[5.098s] Installing gamepad script to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/py_publisher
+[5.099s] Installing listener script to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/py_publisher
+[5.101s] Installing talker script to /home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/py_publisher
+[5.103s] writing list of installed files to '/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/install.log'
+[5.263s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/src/py_publisher' returned '0': PYTHONPATH=/home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/prefix_override:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_publisher build --build-base /home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/build install --record /home/seds/Desktop/TERRANCE/Terrance/build/py_publisher/install.log --single-version-externally-managed install_data

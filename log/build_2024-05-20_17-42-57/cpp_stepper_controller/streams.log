@@ -1,0 +1,22 @@
+[0.053s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[0.141s] -- Found ament_cmake: 2.0.5 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.890s] Traceback (most recent call last):
+[0.893s]   File "/opt/ros/iron/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.895s]     from ament_package.templates import get_environment_hook_template_path
+[0.896s] ModuleNotFoundError: No module named 'ament_package'
+[0.971s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.971s]   execute_process(/usr/bin/python3.10
+[0.972s]   /opt/ros/iron/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.973s]   /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_package_templates/templates.cmake)
+[0.973s]   returned error code 1
+[0.974s] Call Stack (most recent call first):
+[0.974s]   /opt/ros/iron/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.975s]   /opt/ros/iron/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.976s]   /opt/ros/iron/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.977s]   CMakeLists.txt:12 (find_package)
+[0.977s] 
+[0.978s] [0m
+[0.978s] -- Configuring incomplete, errors occurred!
+[0.979s] See also "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles/CMakeOutput.log".
+[0.983s] gmake: *** [Makefile:294: cmake_check_build_system] Error 1
+[0.991s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '2': /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4

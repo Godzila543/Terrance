@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp" "CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o" "gcc" "CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o.d"
   "/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/StepperController.cpp" "CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o" "gcc" "CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o.d"
   "/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp" "CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o" "gcc" "CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o.d"
   )

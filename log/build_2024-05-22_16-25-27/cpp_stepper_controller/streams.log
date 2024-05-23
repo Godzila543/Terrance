@@ -1,0 +1,48 @@
+[0.090s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[0.204s] -- Found ament_cmake: 2.0.5 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.959s] -- Found rclcpp: 21.0.6 (/opt/ros/iron/share/rclcpp/cmake)
+[1.146s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[1.186s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[1.247s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.323s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.998s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[2.006s] -- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[3.047s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.792s] -- Found rclcpp_components: 21.0.6 (/opt/ros/iron/share/rclcpp_components/cmake)
+[4.165s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[4.300s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[4.660s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.663s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include>
+[4.663s] -- Configured cppcheck exclude dirs and/or files: 
+[4.672s] -- Added test 'lint_cmake' to check CMake code style
+[4.679s] -- Added test 'uncrustify' to check C / C++ code style
+[4.679s] -- Configured uncrustify additional arguments: 
+[4.682s] -- Added test 'xmllint' to check XML markup files
+[4.686s] -- Configuring done
+[4.749s] -- Generating done
+[4.766s] -- Build files have been written to: /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller
+[4.909s] [35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[4.974s] [ 20%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o[0m
+[4.975s] [ 40%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[4.985s] [ 60%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/listener.cpp.o[0m
+[5.031s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[5.034s]     1 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[5.035s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.036s] compilation terminated.
+[5.038s] gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:76: CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o] Error 1
+[5.039s] gmake[2]: *** Waiting for unfinished jobs....
+[5.050s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/listener.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Klistener.hpp: No such file or directory
+[5.051s]     3 | #include [01;31m[K"listener.hpp"[m[K
+[5.051s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.052s] compilation terminated.
+[5.052s] gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:118: CMakeFiles/cpp_stepper_controller.dir/src/listener.cpp.o] Error 1
+[5.087s] In file included from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.hpp:1[m[K,
+[5.088s]                  from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:9[m[K:
+[5.088s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[5.088s]     1 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[5.089s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.089s] compilation terminated.
+[5.091s] gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:104: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o] Error 1
+[5.092s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_stepper_controller.dir/all] Error 2
+[5.093s] gmake: *** [Makefile:146: all] Error 2
+[5.099s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4

@@ -1,0 +1,120 @@
+[0.237s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[1.121s] -- Found ament_cmake: 2.0.5 (/opt/ros/iron/share/ament_cmake/cmake)
+[2.449s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):
+[2.451s]   Operation not permitted
+[2.460s] Call Stack (most recent call first):
+[2.461s]   /opt/ros/iron/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:24 (stamp)
+[2.470s]   /opt/ros/iron/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[2.478s]   /opt/ros/iron/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[2.479s]   /opt/ros/iron/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[2.481s]   CMakeLists.txt:12 (find_package)
+[2.484s] 
+[2.486s] [0m
+[3.287s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/ament_cmake_uninstall_target-extras.cmake:28 (configure_file):
+[3.289s]   Operation not permitted
+[3.291s] Call Stack (most recent call first):
+[3.302s]   /opt/ros/iron/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[3.303s]   /opt/ros/iron/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[3.309s]   /opt/ros/iron/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[3.311s]   CMakeLists.txt:12 (find_package)
+[3.317s] 
+[3.318s] [0m
+[3.448s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_test/cmake/ament_cmake_test-extras.cmake:34 (configure_file):
+[3.456s]   Operation not permitted
+[3.458s] Call Stack (most recent call first):
+[3.461s]   /opt/ros/iron/share/ament_cmake_test/cmake/ament_cmake_testConfig.cmake:41 (include)
+[3.462s]   /opt/ros/iron/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[3.463s]   /opt/ros/iron/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[3.465s]   CMakeLists.txt:12 (find_package)
+[3.466s] 
+[3.467s] [0m
+[3.509s] -- Found rclcpp: 21.0.6 (/opt/ros/iron/share/rclcpp/cmake)
+[4.789s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[5.014s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[5.526s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.954s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.570s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[7.638s] -- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[9.299s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.811s] -- Found FastRTPS: /opt/ros/iron/include  
+[10.655s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.721s] -- Found rclcpp_components: 21.0.6 (/opt/ros/iron/share/rclcpp_components/cmake)
+[13.822s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[14.101s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[14.121s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):
+[14.123s]   Operation not permitted
+[14.129s] Call Stack (most recent call first):
+[14.133s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:73 (stamp)
+[14.147s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[14.150s]   /opt/ros/iron/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[14.152s]   CMakeLists.txt:48 (ament_lint_auto_find_test_dependencies)
+[14.153s] 
+[14.154s] [0m
+[14.155s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):
+[14.165s]   Operation not permitted
+[14.183s] Call Stack (most recent call first):
+[14.198s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:73 (stamp)
+[14.203s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[14.207s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[14.208s]   CMakeLists.txt:51 (ament_package)
+[14.210s] 
+[14.211s] [0m
+[14.225s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):
+[14.252s]   Operation not permitted
+[14.261s] Call Stack (most recent call first):
+[14.262s]   /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake:37 (stamp)
+[14.263s]   /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:20 (ament_environment_hooks)
+[14.272s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[14.291s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[14.292s]   CMakeLists.txt:51 (ament_package)
+[14.293s] 
+[14.305s] [0m
+[14.306s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):
+[14.307s]   Operation not permitted
+[14.312s] Call Stack (most recent call first):
+[14.330s]   /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake:37 (stamp)
+[14.338s]   /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:20 (ament_environment_hooks)
+[14.339s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[14.341s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[14.342s]   CMakeLists.txt:51 (ament_package)
+[14.344s] 
+[14.346s] [0m
+[14.347s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake:73 (configure_file):
+[14.349s]   Operation not permitted
+[14.350s] Call Stack (most recent call first):
+[14.351s]   /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:26 (ament_generate_package_environment)
+[14.352s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[14.353s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[14.358s]   CMakeLists.txt:51 (ament_package)
+[14.363s] 
+[14.372s] [0m
+[14.377s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake:73 (configure_file):
+[14.381s]   Operation not permitted
+[14.387s] Call Stack (most recent call first):
+[14.390s]   /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:26 (ament_generate_package_environment)
+[14.391s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[14.396s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[14.398s]   CMakeLists.txt:51 (ament_package)
+[14.404s] 
+[14.406s] [0m
+[14.411s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake:73 (configure_file):
+[14.412s]   Operation not permitted
+[14.413s] Call Stack (most recent call first):
+[14.438s]   /opt/ros/iron/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:26 (ament_generate_package_environment)
+[14.445s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[14.450s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[14.462s]   CMakeLists.txt:51 (ament_package)
+[14.467s] 
+[14.473s] [0m
+[14.496s] [31mCMake Error at /opt/ros/iron/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):
+[14.505s]   Operation not permitted
+[14.525s] Call Stack (most recent call first):
+[14.532s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:135 (stamp)
+[14.538s]   /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_package.cmake:68 (_ament_package)
+[14.544s]   CMakeLists.txt:51 (ament_package)
+[14.549s] 
+[14.551s] [0m
+[14.553s] -- Configuring incomplete, errors occurred!
+[14.558s] See also "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles/CMakeOutput.log".
+[14.560s] gmake: *** [Makefile:294: cmake_check_build_system] Error 1
+[14.562s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4

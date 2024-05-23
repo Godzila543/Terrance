@@ -1,0 +1,154 @@
+[0.086s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller -DCMAKE_INSTALL_PREFIX=/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller
+[0.374s] -- The C compiler identification is GNU 11.4.0
+[0.654s] -- The CXX compiler identification is GNU 11.4.0
+[0.683s] -- Detecting C compiler ABI info
+[1.013s] -- Detecting C compiler ABI info - done
+[1.039s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.040s] -- Detecting C compile features
+[1.044s] -- Detecting C compile features - done
+[1.056s] -- Detecting CXX compiler ABI info
+[1.427s] -- Detecting CXX compiler ABI info - done
+[1.455s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.456s] -- Detecting CXX compile features
+[1.458s] -- Detecting CXX compile features - done
+[1.485s] -- Found ament_cmake: 2.0.5 (/opt/ros/iron/share/ament_cmake/cmake)
+[2.455s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[3.091s] -- Found rclcpp: 21.0.6 (/opt/ros/iron/share/rclcpp/cmake)
+[3.513s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[3.615s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[3.739s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.877s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.712s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[4.739s] -- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[5.469s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.730s] -- Found FastRTPS: /opt/ros/iron/include  
+[6.159s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.899s] -- Found rclcpp_components: 21.0.6 (/opt/ros/iron/share/rclcpp_components/cmake)
+[7.396s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[7.544s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[8.004s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.004s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include>
+[8.005s] -- Configured cppcheck exclude dirs and/or files: 
+[8.009s] -- Added test 'lint_cmake' to check CMake code style
+[8.019s] -- Added test 'uncrustify' to check C / C++ code style
+[8.019s] -- Configured uncrustify additional arguments: 
+[8.022s] -- Added test 'xmllint' to check XML markup files
+[8.028s] -- Configuring done
+[8.096s] -- Generating done
+[8.106s] -- Build files have been written to: /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller
+[8.147s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller -DCMAKE_INSTALL_PREFIX=/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller
+[8.157s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4
+[8.331s] [35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[8.427s] [ 25%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o[0m
+[8.430s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[21.182s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:20:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[21.183s]    20 | };
+[21.183s]       |   [01;31m[K^[m[K
+[21.184s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:4:50:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[21.185s]     4 | class controllerSubscriber : public rclcpp::Node [01;36m[K{[m[K
+[21.185s]       |                                                  [01;36m[K^[m[K
+[21.212s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:[m[K In constructor ‘[01m[KcontrollerSubscriber::controllerSubscriber()[m[K’:
+[21.213s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:7:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_[m[K’ was not declared in this scope
+[21.213s]     7 |     [01;31m[Ksub_[m[K = this->create_subscription<std_msgs::msg::String(
+[21.221s]       |     [01;31m[K^~~~[m[K
+[21.222s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:8:50:[m[K [01;31m[Kerror: [m[K‘[01m[KcallbackFun[m[K’ is not a member of ‘[01m[KcontrollerSubscriber[m[K’
+[21.223s]     8 |     "data", 10, std::bind(&controllerSubscriber::[01;31m[KcallbackFun[m[K, this, _1));
+[21.224s]       |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[21.224s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:8:69:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+[21.225s]     8 |     "data", 10, std::bind(&controllerSubscriber::callbackFun, this, [01;31m[K_1[m[K));
+[21.225s]       |                                                                     [01;31m[K^~[m[K
+[21.226s]       |                                                                     [32m[Kstd::placeholders::_1[m[K
+[21.227s] In file included from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[21.227s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[21.228s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[21.228s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[21.229s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[21.229s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[21.230s]                  from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:1[m[K:
+[21.230s] [01m[K/usr/include/c++/11/functional:225:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+[21.231s]   225 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+[21.233s]       |                                  [01;36m[K^~[m[K
+[21.233s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:7:18:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[21.234s]     7 |     sub_ = this->[01;31m[Kcreate_subscription<std_msgs::msg::String([m[K
+[21.235s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.236s]     8 | [01;31m[K    "data", 10, std::bind(&controllerSubscriber::callbackFun, this, _1))[m[K;
+[21.236s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.237s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:9:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[21.238s]     9 |     [01;31m[K)[m[K
+[21.238s]       |     [01;31m[K^[m[K
+[21.239s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:15:3:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+[21.240s]    15 |   [01;31m[Kprivate[m[K:
+[21.240s]       |   [01;31m[K^~~~~~~[m[K
+[21.241s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:54:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[21.242s]    54 | }
+[21.242s]       |  [01;31m[K^[m[K
+[21.243s] In file included from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:9[m[K:
+[21.244s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:4:50:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[21.245s]     4 | class controllerSubscriber : public rclcpp::Node [01;36m[K{[m[K
+[21.245s]       |                                                  [01;36m[K^[m[K
+[21.264s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:[m[K In constructor ‘[01m[KcontrollerSubscriber::controllerSubscriber()[m[K’:
+[21.264s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:7:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_[m[K’ was not declared in this scope
+[21.265s]     7 |     [01;31m[Ksub_[m[K = this->create_subscription<std_msgs::msg::String(
+[21.267s]       |     [01;31m[K^~~~[m[K
+[21.267s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:8:50:[m[K [01;31m[Kerror: [m[K‘[01m[KcallbackFun[m[K’ is not a member of ‘[01m[KcontrollerSubscriber[m[K’
+[21.268s]     8 |     "data", 10, std::bind(&controllerSubscriber::[01;31m[KcallbackFun[m[K, this, _1));
+[21.268s]       |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[21.269s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:8:69:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+[21.269s]     8 |     "data", 10, std::bind(&controllerSubscriber::callbackFun, this, [01;31m[K_1[m[K));
+[21.270s]       |                                                                     [01;31m[K^~[m[K
+[21.270s]       |                                                                     [32m[Kstd::placeholders::_1[m[K
+[21.271s] In file included from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[21.271s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[21.272s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[21.273s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[21.273s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[21.274s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[21.274s]                  from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:1[m[K,
+[21.275s]                  from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:9[m[K:
+[21.275s] [01m[K/usr/include/c++/11/functional:225:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+[21.276s]   225 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+[21.277s]       |                                  [01;36m[K^~[m[K
+[21.277s] In file included from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:9[m[K:
+[21.278s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:7:18:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[21.278s]     7 |     sub_ = this->[01;31m[Kcreate_subscription<std_msgs::msg::String([m[K
+[21.279s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.280s]     8 | [01;31m[K    "data", 10, std::bind(&controllerSubscriber::callbackFun, this, _1))[m[K;
+[21.281s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.281s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:9:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[21.282s]     9 |     [01;31m[K)[m[K
+[21.282s]       |     [01;31m[K^[m[K
+[21.283s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:15:3:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+[21.284s]    15 |   [01;31m[Kprivate[m[K:
+[21.284s]       |   [01;31m[K^~~~~~~[m[K
+[21.449s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:11:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksecond[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[21.450s]    11 |     float [01;35m[Ksecond[m[K;
+[21.450s]       |           [01;35m[K^~~~~~[m[K
+[21.451s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:12:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthird[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[21.451s]    12 |     float [01;35m[Kthird[m[K;
+[21.452s]       |           [01;35m[K^~~~~[m[K
+[21.453s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:13:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfourth[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[21.453s]    13 |     float [01;35m[Kfourth[m[K;
+[21.454s]       |           [01;35m[K^~~~~~[m[K
+[21.454s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:[m[K At global scope:
+[21.455s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:20:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[21.456s]    20 | };
+[21.456s]       |   [01;31m[K^[m[K
+[21.490s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:11:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksecond[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[21.491s]    11 |     float [01;35m[Ksecond[m[K;
+[21.492s]       |           [01;35m[K^~~~~~[m[K
+[21.493s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:12:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthird[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[21.494s]    12 |     float [01;35m[Kthird[m[K;
+[21.494s]       |           [01;35m[K^~~~~[m[K
+[21.495s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/include/Controller.hpp:13:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfourth[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[21.495s]    13 |     float [01;35m[Kfourth[m[K;
+[21.496s]       |           [01;35m[K^~~~~~[m[K
+[21.497s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:[m[K At global scope:
+[21.497s] [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:54:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[21.498s]    54 | }
+[21.498s]       |  [01;31m[K^[m[K
+[24.882s] gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:76: CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o] Error 1
+[24.883s] gmake[2]: *** Waiting for unfinished jobs....
+[24.937s] gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:104: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o] Error 1
+[24.938s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_stepper_controller.dir/all] Error 2
+[24.939s] gmake: *** [Makefile:146: all] Error 2
+[24.948s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seds/Desktop/TERRANCE/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller -- -j4 -l4

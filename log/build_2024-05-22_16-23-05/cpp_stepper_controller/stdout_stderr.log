@@ -1,0 +1,23 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/listener.cpp.o[0m
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/listener.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Klistener.hpp: No such file or directory
+    3 | #include [01;31m[K"listener.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:118: CMakeFiles/cpp_stepper_controller.dir/src/listener.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp.hpp: No such file or directory
+    1 | #include [01;31m[K"rclcpp.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:76: CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o] Error 1
+In file included from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.hpp:1[m[K,
+                 from [01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:9[m[K:
+[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/Controller.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp.hpp: No such file or directory
+    1 | #include [01;31m[K"rclcpp.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:104: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_stepper_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

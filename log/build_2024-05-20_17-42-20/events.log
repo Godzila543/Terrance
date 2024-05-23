@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.001423] (-) JobUnselected: {'identifier': 'cpp_stepper_controller'}
+[0.001714] (-) JobUnselected: {'identifier': 'py_publisher'}
+[0.002769] (-) EventReactorShutdown: {}
