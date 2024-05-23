@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller
+CMAKE_SOURCE_DIR = /root/Terrance/src/cpp_stepper_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller
+CMAKE_BINARY_DIR = /root/Terrance/build/cpp_stepper_controller
 
 # Utility rule file for cpp_stepper_controller_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/cpp_stepper_controller_uninstall.dir/compiler_depend.make
 include CMakeFiles/cpp_stepper_controller_uninstall.dir/progress.make
 
 CMakeFiles/cpp_stepper_controller_uninstall:
-	/usr/bin/cmake -P /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /root/Terrance/build/cpp_stepper_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 cpp_stepper_controller_uninstall: CMakeFiles/cpp_stepper_controller_uninstall
 cpp_stepper_controller_uninstall: CMakeFiles/cpp_stepper_controller_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/cpp_stepper_controller_uninstall.dir/clean:
 .PHONY : CMakeFiles/cpp_stepper_controller_uninstall.dir/clean
 
 CMakeFiles/cpp_stepper_controller_uninstall.dir/depend:
-	cd /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller /home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles/cpp_stepper_controller_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/Terrance/build/cpp_stepper_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/Terrance/src/cpp_stepper_controller /root/Terrance/src/cpp_stepper_controller /root/Terrance/build/cpp_stepper_controller /root/Terrance/build/cpp_stepper_controller /root/Terrance/build/cpp_stepper_controller/CMakeFiles/cpp_stepper_controller_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cpp_stepper_controller_uninstall.dir/depend
 

@@ -1,0 +1,26 @@
+[0.014s] Invoking command in '/root/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /root/Terrance/build/cpp_stepper_controller -- -j20 -l20
+[0.033s] [35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[0.043s] [ 25%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[5.174s] [ 50%] [32m[1mLinking CXX executable cpp_stepper_controller[0m
+[5.443s] [100%] Built target cpp_stepper_controller
+[5.448s] Invoked command in '/root/Terrance/build/cpp_stepper_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /root/Terrance/build/cpp_stepper_controller -- -j20 -l20
+[5.463s] Invoking command in '/root/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --install /root/Terrance/build/cpp_stepper_controller
+[5.466s] -- Install configuration: ""
+[5.466s] -- Installing: /root/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller
+[5.469s] -- Set runtime path of "/root/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller" to ""
+[5.469s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/package_run_dependencies/cpp_stepper_controller
+[5.469s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/parent_prefix_path/cpp_stepper_controller
+[5.469s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.sh
+[5.469s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.dsv
+[5.470s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.sh
+[5.470s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.dsv
+[5.470s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.bash
+[5.470s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.sh
+[5.470s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.zsh
+[5.470s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.dsv
+[5.470s] -- Installing: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.dsv
+[5.470s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/packages/cpp_stepper_controller
+[5.470s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig.cmake
+[5.471s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig-version.cmake
+[5.471s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.xml
+[5.472s] Invoked command in '/root/Terrance/build/cpp_stepper_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --install /root/Terrance/build/cpp_stepper_controller

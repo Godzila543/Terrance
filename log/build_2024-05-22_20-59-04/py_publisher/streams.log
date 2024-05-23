@@ -1,0 +1,24 @@
+[0.414s] Invoking command in '/root/Terrance/src/py_publisher': PYTHONPATH=/root/Terrance/build/py_publisher/prefix_override:/root/Terrance/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_publisher build --build-base /root/Terrance/build/py_publisher/build install --record /root/Terrance/build/py_publisher/install.log --single-version-externally-managed install_data
+[0.566s] running egg_info
+[0.566s] writing ../../build/py_publisher/py_publisher.egg-info/PKG-INFO
+[0.567s] writing dependency_links to ../../build/py_publisher/py_publisher.egg-info/dependency_links.txt
+[0.567s] writing entry points to ../../build/py_publisher/py_publisher.egg-info/entry_points.txt
+[0.567s] writing requirements to ../../build/py_publisher/py_publisher.egg-info/requires.txt
+[0.567s] writing top-level names to ../../build/py_publisher/py_publisher.egg-info/top_level.txt
+[0.568s] reading manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'
+[0.568s] adding license file 'LICENSE'
+[0.569s] writing manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'
+[0.569s] running build
+[0.569s] running build_py
+[0.569s] running install
+[0.569s] running install_lib
+[0.570s] running install_data
+[0.570s] running install_egg_info
+[0.572s] removing '/root/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[0.572s] Copying ../../build/py_publisher/py_publisher.egg-info to /root/Terrance/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info
+[0.572s] running install_scripts
+[0.587s] Installing gamepad script to /root/Terrance/install/py_publisher/lib/py_publisher
+[0.587s] Installing listener script to /root/Terrance/install/py_publisher/lib/py_publisher
+[0.587s] Installing talker script to /root/Terrance/install/py_publisher/lib/py_publisher
+[0.587s] writing list of installed files to '/root/Terrance/build/py_publisher/install.log'
+[0.608s] Invoked command in '/root/Terrance/src/py_publisher' returned '0': PYTHONPATH=/root/Terrance/build/py_publisher/prefix_override:/root/Terrance/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_publisher build --build-base /root/Terrance/build/py_publisher/build install --record /root/Terrance/build/py_publisher/install.log --single-version-externally-managed install_data

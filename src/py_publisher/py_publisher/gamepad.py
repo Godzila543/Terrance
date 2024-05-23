@@ -12,7 +12,7 @@ class Controller:
             "right_stick": {"x": 0, "y": 0},
             "d_pad": {"x": 0, "y": 0},
             "triggers": {"left": 0, "right": 0},
-            "buttons": {"up": 0, "down": 0, "left": 0, "right": 0, "a": 0, "b": 0, "x": 0, "y": 0,
+            "buttons": {"a": 0, "b": 0, "x": 0, "y": 0,
                         "l1": 0, "r1": 0, "select": 0, "start": 0, "l_stick": 0, "r_stick": 0}
         }
         
@@ -26,10 +26,10 @@ class Controller:
         state["d_pad"]["y"] = data["axes"].get('ABS_HAT0Y', state["d_pad"]["y"])
         state["triggers"]["left"] = data["axes"].get('ABS_Z', state["triggers"]["left"])
         state["triggers"]["right"] = data["axes"].get('ABS_RZ', state["triggers"]["right"])
-        state["buttons"]["y"] = data["buttons"].get('BTN_NORTH', state["buttons"]["up"])
-        state["buttons"]["b"] = data["buttons"].get('BTN_EAST', state["buttons"]["down"])
-        state["buttons"]["a"] = data["buttons"].get('BTN_SOUTH', state["buttons"]["left"])
-        state["buttons"]["x"] = data["buttons"].get('BTN_WEST', state["buttons"]["right"])
+        state["buttons"]["y"] = data["buttons"].get('BTN_NORTH', state["buttons"]["y"])
+        state["buttons"]["b"] = data["buttons"].get('BTN_EAST', state["buttons"]["b"])
+        state["buttons"]["a"] = data["buttons"].get('BTN_SOUTH', state["buttons"]["a"])
+        state["buttons"]["x"] = data["buttons"].get('BTN_WEST', state["buttons"]["x"])
         state["buttons"]["l1"] = data["buttons"].get('BTN_TL', state["buttons"]["l1"])
         state["buttons"]["r1"] = data["buttons"].get('BTN_TR', state["buttons"]["r1"])
         state["buttons"]["select"] = data["buttons"].get('BTN_SELECT', state["buttons"]["select"])
@@ -49,7 +49,7 @@ class GamepadNode(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.buffer = ""
-        self.server_address = ('192.168.192.1', 54535)
+        self.server_address = ('localhost', 54535)
         self.get_logger().info('Connecting to gamepad server (check server and address if no connection)')
         self.connect_to_server()
 

@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[01m[K/root/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:34:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgamepad[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   34 |     const Gamepad &[01;35m[Kgamepad[m[K = controller_subscriber->getGamepad();
+      |                    [01;35m[K^~~~~~~[m[K
+[ 50%] [32m[1mLinking CXX executable cpp_stepper_controller[0m
+[100%] Built target cpp_stepper_controller
+-- Install configuration: ""
+-- Installing: /root/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller
+-- Set runtime path of "/root/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller" to ""
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/package_run_dependencies/cpp_stepper_controller
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/parent_prefix_path/cpp_stepper_controller
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.sh
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.dsv
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.bash
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.sh
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.zsh
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.dsv
+-- Installing: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.dsv
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/packages/cpp_stepper_controller
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig.cmake
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig-version.cmake
+-- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.xml

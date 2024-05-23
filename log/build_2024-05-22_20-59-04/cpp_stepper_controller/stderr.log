@@ -1,0 +1,4 @@
+[01m[K/root/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:34:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgamepad[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   34 |     const Gamepad &[01;35m[Kgamepad[m[K = controller_subscriber->getGamepad();
+      |                    [01;35m[K^~~~~~~[m[K

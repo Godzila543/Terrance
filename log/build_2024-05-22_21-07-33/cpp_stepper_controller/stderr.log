@@ -1,0 +1,11 @@
+[01m[K/root/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:[m[K In function ‘[01m[Kvoid signal_handler(int)[m[K’:
+[01m[K/root/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:16:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | void signal_handler([01;35m[Kint signal[m[K)
+      |                     [01;35m[K~~~~^~~~~~[m[K
+[01m[K/root/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:50:28:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 2 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   50 |     printf("left_stick.x: [01;35m[K%f[m[K\n", [32m[Kgamepad.left_stick.x[m[K);
+      |                           [01;35m[K~^[m[K     [32m[K~~~~~~~~~~~~~~~~~~~~[m[K
+      |                            [01;35m[K|[m[K                        [32m[K|[m[K
+      |                            [01;35m[Kdouble[m[K                   [32m[Kint[m[K
+      |                           [32m[K%d[m[K

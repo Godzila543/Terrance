@@ -1,0 +1,71 @@
+[0.008s] Invoking command in '/root/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake /root/Terrance/src/cpp_stepper_controller -DCMAKE_INSTALL_PREFIX=/root/Terrance/install/cpp_stepper_controller
+[0.244s] -- The C compiler identification is GNU 11.4.0
+[0.659s] -- The CXX compiler identification is GNU 11.4.0
+[0.878s] -- Detecting C compiler ABI info
+[0.981s] -- Detecting C compiler ABI info - done
+[0.985s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.986s] -- Detecting C compile features
+[0.987s] -- Detecting C compile features - done
+[0.989s] -- Detecting CXX compiler ABI info
+[1.096s] -- Detecting CXX compiler ABI info - done
+[1.100s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.100s] -- Detecting CXX compile features
+[1.100s] -- Detecting CXX compile features - done
+[1.109s] -- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)
+[1.211s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.280s] -- Found rclcpp: 21.0.5 (/opt/ros/iron/share/rclcpp/cmake)
+[1.393s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[1.405s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[1.421s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.438s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.557s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[1.560s] -- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[2.470s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.292s] -- Found FastRTPS: /opt/ros/iron/include  
+[4.848s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.174s] -- Found rclcpp_components: 21.0.5 (/opt/ros/iron/share/rclcpp_components/cmake)
+[5.247s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[5.315s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[5.367s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.367s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/Terrance/src/cpp_stepper_controller/include>
+[5.367s] -- Configured cppcheck exclude dirs and/or files: 
+[5.368s] -- Added test 'lint_cmake' to check CMake code style
+[5.368s] -- Added test 'uncrustify' to check C / C++ code style
+[5.368s] -- Configured uncrustify additional arguments: 
+[5.369s] -- Added test 'xmllint' to check XML markup files
+[5.370s] -- Configuring done
+[5.379s] -- Generating done
+[5.381s] -- Build files have been written to: /root/Terrance/build/cpp_stepper_controller
+[5.386s] Invoked command in '/root/Terrance/build/cpp_stepper_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake /root/Terrance/src/cpp_stepper_controller -DCMAKE_INSTALL_PREFIX=/root/Terrance/install/cpp_stepper_controller
+[5.388s] Invoking command in '/root/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /root/Terrance/build/cpp_stepper_controller -- -j20 -l20
+[5.404s] [35m[1mConsolidate compiler generated dependencies of target cpp_stepper_controller[0m
+[5.411s] [ 25%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/Controller.cpp.o[0m
+[5.411s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/StepperController.cpp.o[0m
+[5.438s] [ 75%] [32mBuilding CXX object CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o[0m
+[5.467s] [01m[K/root/Terrance/src/cpp_stepper_controller/src/StepperController.cpp:[m[K In member function ‘[01m[Kvoid StepperController::updateActivation(uint32_t)[m[K’:
+[5.467s] [01m[K/root/Terrance/src/cpp_stepper_controller/src/StepperController.cpp:19:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.467s]    19 |   if ([01;35m[Kt - period_us > previous_step[m[K)
+[5.467s]       |       [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[9.423s] [100%] [32m[1mLinking CXX executable cpp_stepper_controller[0m
+[9.768s] [100%] Built target cpp_stepper_controller
+[9.773s] Invoked command in '/root/Terrance/build/cpp_stepper_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /root/Terrance/build/cpp_stepper_controller -- -j20 -l20
+[9.788s] Invoking command in '/root/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --install /root/Terrance/build/cpp_stepper_controller
+[9.791s] -- Install configuration: ""
+[9.791s] -- Installing: /root/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller
+[9.793s] -- Set runtime path of "/root/Terrance/install/cpp_stepper_controller/lib/cpp_stepper_controller/cpp_stepper_controller" to ""
+[9.793s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/package_run_dependencies/cpp_stepper_controller
+[9.793s] -- Installing: /root/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/parent_prefix_path/cpp_stepper_controller
+[9.793s] -- Installing: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.sh
+[9.793s] -- Installing: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/ament_prefix_path.dsv
+[9.793s] -- Installing: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.sh
+[9.794s] -- Installing: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/environment/path.dsv
+[9.794s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.bash
+[9.794s] -- Installing: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.sh
+[9.794s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.zsh
+[9.794s] -- Installing: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/local_setup.dsv
+[9.794s] -- Installing: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.dsv
+[9.794s] -- Installing: /root/Terrance/install/cpp_stepper_controller/share/ament_index/resource_index/packages/cpp_stepper_controller
+[9.794s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig.cmake
+[9.794s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/cmake/cpp_stepper_controllerConfig-version.cmake
+[9.795s] -- Up-to-date: /root/Terrance/install/cpp_stepper_controller/share/cpp_stepper_controller/package.xml
+[9.796s] Invoked command in '/root/Terrance/build/cpp_stepper_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --install /root/Terrance/build/cpp_stepper_controller

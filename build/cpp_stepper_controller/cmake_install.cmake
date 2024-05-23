@@ -1,8 +1,8 @@
-# Install script for directory: /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller
+# Install script for directory: /root/Terrance/src/cpp_stepper_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller")
+  set(CMAKE_INSTALL_PREFIX "/root/Terrance/install/cpp_stepper_controller")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_stepper_controller/cpp_stepper_controller"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cpp_stepper_controller" TYPE EXECUTABLE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/cpp_stepper_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cpp_stepper_controller" TYPE EXECUTABLE FILES "/root/Terrance/build/cpp_stepper_controller/cpp_stepper_controller")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_stepper_controller/cpp_stepper_controller" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cpp_stepper_controller/cpp_stepper_controller")
     file(RPATH_CHANGE
@@ -63,11 +63,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cpp_stepper_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/root/Terrance/build/cpp_stepper_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cpp_stepper_controller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cpp_stepper_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/root/Terrance/build/cpp_stepper_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cpp_stepper_controller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -75,7 +75,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller/environment" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller/environment" TYPE FILE FILES "/root/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,42 +83,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller/environment" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller/environment" TYPE FILE FILES "/root/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/root/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/root/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/root/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/root/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/root/Terrance/build/cpp_stepper_controller/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_index/share/ament_index/resource_index/packages/cpp_stepper_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/root/Terrance/build/cpp_stepper_controller/ament_cmake_index/share/ament_index/resource_index/packages/cpp_stepper_controller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller/cmake" TYPE FILE FILES
-    "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_core/cpp_stepper_controllerConfig.cmake"
-    "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/ament_cmake_core/cpp_stepper_controllerConfig-version.cmake"
+    "/root/Terrance/build/cpp_stepper_controller/ament_cmake_core/cpp_stepper_controllerConfig.cmake"
+    "/root/Terrance/build/cpp_stepper_controller/ament_cmake_core/cpp_stepper_controllerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cpp_stepper_controller" TYPE FILE FILES "/root/Terrance/src/cpp_stepper_controller/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -129,5 +129,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/Terrance/build/cpp_stepper_controller/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -14,7 +14,7 @@ void StepperController::setRPM(float rpm)
   period_us = 1.0E6 / (rpm * 200.0 / 60.0);
 }
 
-void StepperController::updateActivation(uint32_t t)
+void StepperController::updateActivation(int32_t t)
 {
   if (t - period_us > previous_step)
   {

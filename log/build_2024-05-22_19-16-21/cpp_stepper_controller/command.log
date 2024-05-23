@@ -1,0 +1,2 @@
+Invoking command in '/root/Terrance/build/cpp_stepper_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /root/Terrance/build/cpp_stepper_controller -- -j20 -l20
+Invoked command in '/root/Terrance/build/cpp_stepper_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Terrance/install/py_publisher:/opt/ros/iron /usr/bin/cmake --build /root/Terrance/build/cpp_stepper_controller -- -j20 -l20
