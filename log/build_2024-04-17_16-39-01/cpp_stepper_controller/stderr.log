@@ -1,7 +1,0 @@
-[01m[K/home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller/src/cpp_stepper_controller.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kpins.hpp: No such file or directory
-    7 | #include [01;31m[K"pins.hpp"[m[K
-      |          [01;31m[K^~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/cpp_stepper_controller.dir/build.make:76: CMakeFiles/cpp_stepper_controller.dir/src/cpp_stepper_controller.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_stepper_controller.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

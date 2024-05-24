@@ -1,9 +1,0 @@
-/root/Terrance/build/cpp_StepperController/CMakeFiles/uninstall.dir
-/root/Terrance/build/cpp_StepperController/CMakeFiles/cpp_StepperController_uninstall.dir
-/root/Terrance/build/cpp_StepperController/CMakeFiles/test.dir
-/root/Terrance/build/cpp_StepperController/CMakeFiles/edit_cache.dir
-/root/Terrance/build/cpp_StepperController/CMakeFiles/rebuild_cache.dir
-/root/Terrance/build/cpp_StepperController/CMakeFiles/list_install_components.dir
-/root/Terrance/build/cpp_StepperController/CMakeFiles/install.dir
-/root/Terrance/build/cpp_StepperController/CMakeFiles/install/local.dir
-/root/Terrance/build/cpp_StepperController/CMakeFiles/install/strip.dir

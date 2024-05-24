@@ -1,2 +1,0 @@
-Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller': /usr/bin/cmake /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller -DCMAKE_INSTALL_PREFIX=/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller
-Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller' returned '1': /usr/bin/cmake /home/seds/Desktop/TERRANCE/Terrance/src/cpp_stepper_controller -DCMAKE_INSTALL_PREFIX=/home/seds/Desktop/TERRANCE/Terrance/install/cpp_stepper_controller

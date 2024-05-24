@@ -1,6 +1,0 @@
-Invoking command in '/root/Terrance/build/cpp_StepperController': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /root/Terrance/src/cpp_StepperController -DCMAKE_INSTALL_PREFIX=/root/Terrance/install/cpp_StepperController
-Invoked command in '/root/Terrance/build/cpp_StepperController' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /root/Terrance/src/cpp_StepperController -DCMAKE_INSTALL_PREFIX=/root/Terrance/install/cpp_StepperController
-Invoking command in '/root/Terrance/build/cpp_StepperController': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /root/Terrance/build/cpp_StepperController -- -j20 -l20
-Invoked command in '/root/Terrance/build/cpp_StepperController' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /root/Terrance/build/cpp_StepperController -- -j20 -l20
-Invoking command in '/root/Terrance/build/cpp_StepperController': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /root/Terrance/build/cpp_StepperController
-Invoked command in '/root/Terrance/build/cpp_StepperController' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /root/Terrance/build/cpp_StepperController

@@ -1,9 +1,0 @@
--- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)
-[31mCMake Error at CMakeLists.txt:19 (target_link_libraries):
-  Cannot specify link libraries for target "pigpio" which is not built by
-  this project.
-
-[0m
--- Configuring incomplete, errors occurred!
-See also "/home/seds/Desktop/TERRANCE/Terrance/build/cpp_stepper_controller/CMakeFiles/CMakeOutput.log".
-gmake: *** [Makefile:267: cmake_check_build_system] Error 1

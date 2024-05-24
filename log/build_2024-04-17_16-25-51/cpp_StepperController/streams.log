@@ -1,6 +1,0 @@
-[0.075s] Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController -- -j4 -l4
-[0.225s] [0mCMake Error: The current CMakeCache.txt directory /home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController/CMakeCache.txt is different than the directory /root/Terrance/build/cpp_StepperController where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0.343s] [0mCMake Error: The source directory "/root/Terrance/src/cpp_StepperController" does not exist.
-[0.343s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.353s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
-[0.361s] Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController -- -j4 -l4

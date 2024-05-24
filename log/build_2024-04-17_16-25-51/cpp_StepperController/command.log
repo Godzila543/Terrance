@@ -1,2 +1,0 @@
-Invoking command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController -- -j4 -l4
-Invoked command in '/home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/seds/Desktop/TERRANCE/Terrance/build/cpp_StepperController -- -j4 -l4
