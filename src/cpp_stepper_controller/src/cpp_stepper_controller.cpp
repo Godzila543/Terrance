@@ -32,8 +32,8 @@ int main(int argc, char **argv)
   StepperController motors[4];
   motors[0] = StepperController(pin1, 15);
   motors[1] = StepperController(pin2, 30);
-  motors[2] = StepperController(pin3, 45);
-  motors[3] = StepperController(pin4, 60);
+  motors[2] = StepperController(pin3, 0);
+  motors[3] = StepperController(pin4, 0);
 
   // Setup ROS listener node
   rclcpp::init(argc, argv);
@@ -48,26 +48,30 @@ int main(int argc, char **argv)
   {
     const Gamepad &gamepad = controller_subscriber->getGamepad();
     // test log to see if gamepad is being read
-    printf("left_stick.x: %d\n", gamepad.left_stick.x);
+    // printf("left_stick.x: %d\n", gamepad.left_stick.x);
 
-    // // Get current time
-    // uint32_t current_time = gpioTick();
-    // motors[0].updateActivation(current_time);
-    // motors[1].updateActivation(current_time);
-    // motors[2].updateActivation(current_time);
-    // motors[3].updateActivation(current_time);
 
-    // // Stay high for 1000 us
-    // gpioDelay(1000);
+    // Control Code
+    motors[0].setRPM(gamepad.triggers.left);
+    motors[1].setRPM(gamepad.triggers.right);
+    // Get current time
+    uint32_t current_time = gpioTick();
+    motors[0].updateActivation(current_time);
+    motors[1].updateActivation(current_time);
+    motors[2].updateActivation(current_time);
+    motors[3].updateActivation(current_time);
 
-    // // Unpulse
-    // motors[0].deactivate();
-    // motors[1].deactivate();
-    // motors[2].deactivate();
-    // motors[3].deactivate();
+    // Stay high for 1000 us
+    gpioDelay(1000);
 
-    // // Stay low for 1000 us
-    // gpioDelay(1000);
+    // Unpulse
+    motors[0].deactivate();
+    motors[1].deactivate();
+    motors[2].deactivate();
+    motors[3].deactivate();
+
+    // Stay low for 1000 us
+    gpioDelay(1000);
   }
 
   rclcpp::shutdown();
