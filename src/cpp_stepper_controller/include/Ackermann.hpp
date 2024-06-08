@@ -14,7 +14,7 @@ struct RPMs {
 
 class AckermannSteering {
 public:
-    AckermannSteering(double wheelSeperationHeight, double wheelSeperationWidth, double maxSteeringAngle);
+    AckermannSteering(double wheelSeperationHeight, double wheelSeperationWidth, double wheelRadius, double maxSteeringAngle);
     void setSteeringAngle(double angle);
     void setSteering(double angle, double speed);
     void setSpeed(double speed);

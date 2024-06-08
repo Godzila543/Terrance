@@ -13,7 +13,7 @@ void StepperController::setRPM(float rpm)
 {
   if (rpm < 0)
   {
-    rpm = -rpm
+    rpm = -rpm;
     direction = -1;
   } else {
     direction = 1;

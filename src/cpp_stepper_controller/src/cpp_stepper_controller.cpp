@@ -29,7 +29,7 @@ int main(int argc, char **argv)
   // Watch for interupt signal
   std::signal(SIGINT, signal_handler);
 
-  AckermannSteering ackermann(200, 200, 50, 30);
+  AckermannSteering ackermann(200.0, 200.0, 50.0, 30.0);
   ackermann.setSteeringAngle(0);
   ackermann.setSpeed(0);
 
