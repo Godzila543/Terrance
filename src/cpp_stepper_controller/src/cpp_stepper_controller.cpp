@@ -9,6 +9,7 @@
 #include "pins.hpp"
 #include "StepperController.hpp"
 #include "ControllerSubscriber.hpp"
+#include "Ackermann.hpp"
 // #include "listener.hpp"
 
 volatile std::sig_atomic_t flag = 0;
@@ -27,6 +28,10 @@ int main(int argc, char **argv)
 
   // Watch for interupt signal
   std::signal(SIGINT, signal_handler);
+
+  AckermannSteering ackermann(200, 200, 50, 30);
+  ackermann.setSteeringAngle(0);
+  ackermann.setSpeed(0);
 
   gpioInitialise();
   StepperController motors[4];
@@ -50,10 +55,18 @@ int main(int argc, char **argv)
     // test log to see if gamepad is being read
     // printf("left_stick.x: %d\n", gamepad.left_stick.x);
 
+    // Ackermann Steering
+    ackermann.setSteeringAngle(gamepad.left_stick.x / 10000.0);
+    double speed = gamepad.triggers.right - gamepad.triggers.left;
+    ackermann.setSpeed(speed);
+    
+    // Set RPMs
+    RPMs rpms = ackermann.getRPMs();
+    motors[0].setRPM(rpms.frontLeft);
+    motors[1].setRPM(rpms.frontRight);
+    motors[2].setRPM(rpms.rearLeft);
+    motors[3].setRPM(rpms.rearRight);
 
-    // Control Code
-    motors[0].setRPM(gamepad.triggers.left);
-    motors[1].setRPM(gamepad.triggers.right);
     // Get current time
     uint32_t current_time = gpioTick();
     motors[0].updateActivation(current_time);

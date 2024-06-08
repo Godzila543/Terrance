@@ -6,6 +6,7 @@ class StepperController
     int previous_step;
     int period_us;
     int pin;
+    int direction;
 
   public:
     void updateActivation(int32_t time);

@@ -11,6 +11,13 @@ StepperController::StepperController(int _pin, float rpm)
 
 void StepperController::setRPM(float rpm)
 {
+  if (rpm < 0)
+  {
+    rpm = -rpm
+    direction = -1;
+  } else {
+    direction = 1;
+  }
   period_us = 1.0E6 / (rpm * 200.0 / 60.0);
 }
 
