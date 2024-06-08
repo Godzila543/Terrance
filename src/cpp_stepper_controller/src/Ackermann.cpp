@@ -1,4 +1,5 @@
 #include "Ackermann.hpp"
+#include <cmath>
 
 AckermannSteering::AckermannSteering(double wheelSeperationHeight, double wheelSeperationWidth, double wheelRadius, double maxSteeringAngle) {
     this->wheelSeperationHeigh = wheelSeperationHeight;
@@ -13,13 +14,13 @@ AckermannSteering::AckermannSteering(double wheelSeperationHeight, double wheelS
 
 void AckermannSteering::setSteeringAngle(double angle_) {
     // first convert angle to radius
-    angle = angle_ * M_PI / 180;
-    if angle == 0:
+    angle = angle_ * M_PI / 180.0;
+    if (angle == 0)
         angle = 0.00001;
-    if angle > maxSteeringAngle:
+    if (angle > maxSteeringAngle)
         angle = maxSteeringAngle;
 
-    if angle < -maxSteeringAngle:
+    if (angle < -maxSteeringAngle)
         angle = -maxSteeringAngle;
 
     update();
@@ -37,17 +38,17 @@ void AckermannSteering::setSpeed(double speed) {
 
 void AckermannSteering::update()
 {
-    double x = wheelSeperationHeight / tan(angle)
-    double x1 = x + width/2
-    double x2 = x - width/2
-    double r1 = math.sqrt(x1**2 + height**2)
-    double r2 = math.sqrt(x2**2 + height**2)
+    double x = wheelSeperationHeight / tan(angle);
+    double x1 = x + width/2;
+    double x2 = x - width/2;
+    double r1 = sqrt(pow(x1, 2) + pow(height, 2));
+    double r2 = sqrt(pow(x2, 2) + pow(height, 2));
 
-    double theta1 = math.atan(height/x1)
-    double theta2 = math.atan(height/x2)
+    double theta1 = atan(height/x1);
+    double theta2 = atan(height/x2);
 
-    double rpm1 = speed * r1 / wheelRadius
-    double rpm2 = speed * r2 / wheelRadius
+    double rpm1 = speed * r1 / wheelRadius;
+    double rpm2 = speed * r2 / wheelRadius;
 
     this->steeringAngles = {theta1, theta2, -theta1, -theta2};
     this->rpms = {rpm1, rpm2, rpm1, rpm2};
