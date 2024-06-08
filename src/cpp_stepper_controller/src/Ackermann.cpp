@@ -2,7 +2,7 @@
 #include <cmath>
 
 AckermannSteering::AckermannSteering(double wheelSeperationHeight, double wheelSeperationWidth, double wheelRadius, double maxSteeringAngle) {
-    this->wheelSeperationHeigh = wheelSeperationHeight;
+    this->wheelSeperationHeight = wheelSeperationHeight;
     this->wheelSeperationWidth = wheelSeperationWidth;
     this->maxSteeringAngle = maxSteeringAngle;
     this->speed = 0;
@@ -39,13 +39,13 @@ void AckermannSteering::setSpeed(double speed) {
 void AckermannSteering::update()
 {
     double x = wheelSeperationHeight / tan(angle);
-    double x1 = x + width/2;
-    double x2 = x - width/2;
-    double r1 = sqrt(pow(x1, 2) + pow(height, 2));
-    double r2 = sqrt(pow(x2, 2) + pow(height, 2));
+    double x1 = x + wheelSeperationWidth / 2;
+    double x2 = x - wheelSeperationWidth / 2;
+    double r1 = sqrt(pow(x1, 2) + pow(wheelSeperationHeight, 2));
+    double r2 = sqrt(pow(x2, 2) + pow(wheelSeperationHeight, 2));
 
-    double theta1 = atan(height/x1);
-    double theta2 = atan(height/x2);
+    double theta1 = atan(wheelSeperationHeight / x1);
+    double theta2 = atan(wheelSeperationHeight / x2);
 
     double rpm1 = speed * r1 / wheelRadius;
     double rpm2 = speed * r2 / wheelRadius;

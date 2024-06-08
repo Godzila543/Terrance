@@ -24,11 +24,12 @@ public:
     RPMs getRPMs();
 
 private:
-    double wheelSeperationHeigh;
+    double wheelSeperationHeight;
     double wheelSeperationWidth;
     double maxSteeringAngle;
     double speed;
     double wheelRadius;
+    double angle;
     SteeringAngles steeringAngles;
     RPMs rpms;
 };
