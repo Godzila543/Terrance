@@ -3,16 +3,17 @@ struct SteeringAngles {
     double frontRight;
     double rearLeft;
     double rearRight;
-}
+};
 
 struct RPMs {
     double frontLeft;
     double frontRight;
     double rearLeft;
     double rearRight;
-}
+};
 
 class AckermannSteering {
+public:
     AckermannSteering(double wheelSeperationHeight, double wheelSeperationWidth, double maxSteeringAngle);
     void setSteeringAngle(double angle);
     void setSteering(double angle, double speed);
@@ -30,4 +31,4 @@ private:
     double wheelRadius;
     SteeringAngles steeringAngles;
     RPMs rpms;
-}
+};
