@@ -12,8 +12,9 @@ StepperController::StepperController(int stepPin, int _dirPin)
   gpioSetMode(dirPin, PI_OUTPUT);
 }
 
-void StepperController::setRPM(float rpm)
+void StepperController::setRPM(float _rpm)
 {
+  rpm = _rpm;
   if (rpm < 0)
   {
     direction = -1;
@@ -25,6 +26,10 @@ void StepperController::setRPM(float rpm)
 
 void StepperController::updateActivation(int32_t t)
 {
+  if (abs(rpm) < 0.01)
+  {
+    return;
+  }
   if (t - period_us > previous_step)
   {
     previous_step = t;

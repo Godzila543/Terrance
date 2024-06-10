@@ -56,7 +56,7 @@ int main(int argc, char **argv)
     // printf("left_stick.x: %d\n", gamepad.left_stick.x);
 
     // Ackermann Steering
-    ackermann.setSteeringAngle(gamepad.left_stick.x / 10000.0);
+    ackermann.setSteeringAngle(gamepad.left_stick.x / 5000.0);
     double speed = gamepad.triggers.right - gamepad.triggers.left;
     ackermann.setSpeed(speed * 10.0);
     
