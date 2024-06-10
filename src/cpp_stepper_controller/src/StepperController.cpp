@@ -1,12 +1,13 @@
 #include "StepperController.hpp"
 #include <pigpio.h>
+#include <cmath>
 // #include <cstdio>
 
 StepperController::StepperController(int stepPin, int _dirPin)
 {
   pin = stepPin;
   dirPin = _dirPin;
-  period_us = 1.0E9
+  period_us = 1.0E9;
   gpioSetMode(pin, PI_OUTPUT);
   gpioSetMode(dirPin, PI_OUTPUT);
 }
