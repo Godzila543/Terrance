@@ -5,7 +5,6 @@ class StepperController
     float rpm;
     int previous_step;
     int period_us;
-    float rpm;
     int pin;
     int dirPin;
     int direction;
