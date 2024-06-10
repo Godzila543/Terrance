@@ -58,7 +58,7 @@ int main(int argc, char **argv)
     // Ackermann Steering
     ackermann.setSteeringAngle(gamepad.left_stick.x / 10000.0);
     double speed = gamepad.triggers.right - gamepad.triggers.left;
-    ackermann.setSpeed(speed / 100.0);
+    ackermann.setSpeed(speed);
     
     // Set RPMs
     RPMs rpms = ackermann.getRPMs();
