@@ -47,8 +47,8 @@ void AckermannSteering::update()
     double theta1 = atan(wheelSeperationHeight / x1);
     double theta2 = atan(wheelSeperationHeight / x2);
 
-    double rpm1 = speed * r1 / wheelRadius;
-    double rpm2 = speed * r2 / wheelRadius;
+    double rpm1 = speed * r1 / wheelRadius / x;
+    double rpm2 = speed * r2 / wheelRadius / x;
 
     this->steeringAngles = {theta1, theta2, -theta1, -theta2};
     this->rpms = {rpm1, rpm2, rpm1, rpm2};

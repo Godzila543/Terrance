@@ -18,6 +18,9 @@ while True:
     theta1 = math.atan(height/x1)
     theta2 = math.atan(height/x2)
 
+    rpm1 = 100 * r1 / x
+    rpm2 = 100 * r2 / x
+
     print(f"x: {x}")
     print(f"x1: {x1}")
     print(f"x2: {x2}")
@@ -25,3 +28,5 @@ while True:
     print(f"r2: {r2}")
     print(f"theta1: {math.degrees(theta1)}")
     print(f"theta2: {math.degrees(theta2)}")
+    print(f"rpm1: {rpm1}")
+    print(f"rpm2: {rpm2}")
