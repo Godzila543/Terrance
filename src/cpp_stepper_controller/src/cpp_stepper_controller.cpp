@@ -58,10 +58,11 @@ int main(int argc, char **argv)
     // Ackermann Steering
     ackermann.setSteeringAngle(gamepad.left_stick.x / 10000.0);
     double speed = gamepad.triggers.right - gamepad.triggers.left;
-    ackermann.setSpeed(speed);
+    ackermann.setSpeed(speed / 100.0);
     
     // Set RPMs
     RPMs rpms = ackermann.getRPMs();
+    printf("FL: %f, FR: %f, RL: %f, RR: %f\n", rpms.frontLeft, rpms.frontRight, rpms.rearLeft, rpms.rearRight);
     motors[0].setRPM(rpms.frontLeft);
     motors[1].setRPM(rpms.frontRight);
     motors[2].setRPM(rpms.rearLeft);
