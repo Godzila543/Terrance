@@ -35,10 +35,10 @@ int main(int argc, char **argv)
 
   gpioInitialise();
   StepperController motors[4];
-  motors[0] = StepperController(pin1, 15);
-  motors[1] = StepperController(pin2, 30);
-  motors[2] = StepperController(pin3, 0);
-  motors[3] = StepperController(pin4, 0);
+  motors[0] = StepperController(pin1, dirPin1, 15);
+  motors[1] = StepperController(pin2, dirPin2, 30);
+  motors[2] = StepperController(pin3, dirPin3, 0);
+  motors[3] = StepperController(pin4, dirPin4, 0);
 
   // Setup ROS listener node
   rclcpp::init(argc, argv);
