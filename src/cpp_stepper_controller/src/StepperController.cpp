@@ -35,7 +35,7 @@ void StepperController::updateActivation(int32_t t)
   // printf("%d\n", t - previous_step);
   if (t - previous_step > period_us)
   {
-    printf("step\n");
+    // printf("step\n");
     previous_step = t;
     gpioWrite(pin, 1);
   }
