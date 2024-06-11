@@ -29,6 +29,7 @@ void StepperController::updateActivation(int32_t t)
 {
   if (abs(rpm) < 0.01)
   {
+    print("Zero speed")
     return;
   }
   if (t - period_us > previous_step)
