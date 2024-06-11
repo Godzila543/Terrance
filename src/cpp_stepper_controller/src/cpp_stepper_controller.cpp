@@ -61,7 +61,7 @@ int main(int argc, char **argv)
     double speed = (gamepad.triggers.right - gamepad.triggers.left) / 255.0;
     speed = pow(abs(speed), 2.0) * (speed < 0 ? -1 : 1);
     speed *= 1000.0;
-    ackermann.setSpeed();
+    ackermann.setSpeed(speed);
     
     // Set RPMs
     RPMs rpms = ackermann.getRPMs();
