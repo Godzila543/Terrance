@@ -27,12 +27,11 @@ void StepperController::setRPM(float _rpm)
 
 void StepperController::updateActivation(int32_t t)
 {
-  printf("%f\n", rpm);
   if (abs(rpm) < 0.01)
   {
-    printf("Zero speed");
     return;
   }
+  printf("%d\n", period_us);
   if (t - period_us > previous_step)
   {
     previous_step = t;
