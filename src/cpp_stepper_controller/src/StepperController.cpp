@@ -27,6 +27,7 @@ void StepperController::setRPM(float _rpm)
 
 void StepperController::updateActivation(int32_t t)
 {
+  printf("%f\n", rpm);
   if (abs(rpm) < 0.01)
   {
     print("Zero speed")
