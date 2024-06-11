@@ -9,6 +9,7 @@ StepperController::StepperController(int stepPin, int _dirPin)
   dirPin = _dirPin;
   period_us = 1.0E9;
   rpm = 0;
+  previous_step = 0;
   gpioSetMode(pin, PI_OUTPUT);
   gpioSetMode(dirPin, PI_OUTPUT);
 }
