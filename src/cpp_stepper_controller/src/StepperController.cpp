@@ -1,7 +1,7 @@
 #include "StepperController.hpp"
 #include <pigpio.h>
 #include <cmath>
-// #include <cstdio>
+#include <cstdio>
 
 StepperController::StepperController(int stepPin, int _dirPin)
 {
