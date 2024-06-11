@@ -65,7 +65,7 @@ int main(int argc, char **argv)
     
     // Set RPMs
     RPMs rpms = ackermann.getRPMs();
-    printf("FL: %f, FR: %f, RL: %f, RR: %f\n", rpms.frontLeft, rpms.frontRight, rpms.rearLeft, rpms.rearRight);
+    // printf("FL: %f, FR: %f, RL: %f, RR: %f\n", rpms.frontLeft, rpms.frontRight, rpms.rearLeft, rpms.rearRight);
     motors[0].setRPM(rpms.frontLeft);
     motors[1].setRPM(rpms.frontRight);
     motors[2].setRPM(rpms.rearLeft);

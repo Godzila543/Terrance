@@ -32,7 +32,7 @@ void StepperController::updateActivation(int32_t t)
   {
     return;
   }
-  printf("%d\n", t - previous_step);
+  // printf("%d\n", t - previous_step);
   if (t - previous_step > period_us)
   {
     printf("step\n");
