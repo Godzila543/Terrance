@@ -34,6 +34,7 @@ int main(int argc, char **argv)
   ackermann.setSpeed(0);
 
   gpioInitialise();
+  uint32_t start_time = gpioTick();
   StepperController motors[4];
   motors[0] = StepperController(pin1, dirPin1);
   motors[1] = StepperController(pin2, dirPin2);
@@ -69,7 +70,7 @@ int main(int argc, char **argv)
     motors[3].setRPM(rpms.rearRight);
 
     // Get current time
-    uint32_t current_time = gpioTick();
+    uint32_t current_time = gpioTick() - start_time;
     motors[0].updateActivation(current_time);
     motors[1].updateActivation(current_time);
     motors[2].updateActivation(current_time);
