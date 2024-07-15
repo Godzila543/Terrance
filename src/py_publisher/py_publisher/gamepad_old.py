@@ -4,9 +4,6 @@ from rclpy.node import Node
 from std_msgs.msg import String
 import socket
 import json
-import queue
-import threading
-from inputs import devices
 
 class Controller:
     def __init__(self):
@@ -40,34 +37,6 @@ class Controller:
         state["buttons"]["l_stick"] = data["buttons"].get('BTN_THUMBL', state["buttons"]["l_stick"])
         state["buttons"]["r_stick"] = data["buttons"].get('BTN_THUMBR', state["buttons"]["r_stick"])
 
-print("Welcome to the super cool and awesome gamepad server!")
-print("Press Ctrl+C to shut down the server.")
-print("Please move the gamepad if the server is not responding.\n")
-
-# Initialize Gamepad
-if not devices.gamepads:
-    print(
-        "\033[31m" + "No gamepad found. Please connect a gamepad." + "\033[0m"
-    )
-    exit(1)
-
-gamepad = devices.gamepads[0]
-gamepad_events = queue.Queue()
-
-# Flag to signal the read_gamepad thread to stop
-stop_reading = threading.Event()
-
-
-# Function to read gamepad events and put them in the queue
-def read_gamepad():
-    while not stop_reading.is_set():
-        events = gamepad.read()
-        gamepad_events.put(events)
-
-
-# Start a separate thread to read gamepad events
-gamepad_thread = threading.Thread(target=read_gamepad)
-gamepad_thread.start()
 
 class GamepadNode(Node):
     def __init__(self):
@@ -95,7 +64,7 @@ class GamepadNode(Node):
                 self.get_logger().warn("Connection refused, retrying in 1 second")
                 rclpy.spin_once(self, timeout_sec=1)
 
-    def timer_callback_old(self):
+    def timer_callback(self):
         # Receive data
         try:
             data = self.sock.recv(1024)
@@ -118,31 +87,8 @@ class GamepadNode(Node):
             self.sock.close()
             self.connect_to_server()
 
-    def timer_callback(self):
-        while (not gamepad_events.empty()):
-            events = gamepad_events.get()
-            data = {
-                "axes": {
-                    event.code: event.state
-                    for event in events
-                    if event.ev_type == "Absolute"
-                },
-                "buttons": {
-                    event.code: event.state
-                    for event in events
-                    if event.ev_type == "Key"
-                },
-            }
-            # Decode and print the data
-            self.controller.update(data)
-            msg = String()
-            msg.data = json.dumps(self.controller.state)
-            self.publisher_.publish(msg)
-
 def main(args=None):
     rclpy.init(args=args)
-
-    
 
     gamepad_node = GamepadNode()
 
