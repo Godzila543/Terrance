@@ -4,9 +4,6 @@ from rclpy.node import Node
 from std_msgs.msg import String
 import socket
 import json
-import queue
-import threading
-from inputs import devices
 
 class Controller:
     def __init__(self):
@@ -40,34 +37,6 @@ class Controller:
         state["buttons"]["l_stick"] = data["buttons"].get('BTN_THUMBL', state["buttons"]["l_stick"])
         state["buttons"]["r_stick"] = data["buttons"].get('BTN_THUMBR', state["buttons"]["r_stick"])
 
-print("Welcome to the super cool and awesome gamepad server!")
-print("Press Ctrl+C to shut down the server.")
-print("Please move the gamepad if the server is not responding.\n")
-
-# Initialize Gamepad
-if not devices.gamepads:
-    print(
-        "\033[31m" + "No gamepad found. Please connect a gamepad." + "\033[0m"
-    )
-    exit(1)
-
-gamepad = devices.gamepads[0]
-gamepad_events = queue.Queue()
-
-# Flag to signal the read_gamepad thread to stop
-stop_reading = threading.Event()
-
-
-# Function to read gamepad events and put them in the queue
-def read_gamepad():
-    while not stop_reading.is_set():
-        events = gamepad.read()
-        gamepad_events.put(events)
-
-
-# Start a separate thread to read gamepad events
-gamepad_thread = threading.Thread(target=read_gamepad)
-gamepad_thread.start()
 
 class GamepadNode(Node):
     def __init__(self):
@@ -96,30 +65,30 @@ class GamepadNode(Node):
                 rclpy.spin_once(self, timeout_sec=1)
 
     def timer_callback(self):
-        while (not gamepad_events.empty()):
-            events = gamepad_events.get()
-            data = {
-                "axes": {
-                    event.code: event.state
-                    for event in events
-                    if event.ev_type == "Absolute"
-                },
-                "buttons": {
-                    event.code: event.state
-                    for event in events
-                    if event.ev_type == "Key"
-                },
-            }
-            # Decode and print the data
-            self.controller.update(data)
-            msg = String()
-            msg.data = json.dumps(self.controller.state)
-            self.publisher_.publish(msg)
+        # Receive data
+        try:
+            data = self.sock.recv(1024)
+            if not data:  # connection closed
+                self.get_logger().error("Connection closed, reconnecting")
+                self.sock.close()
+                self.connect_to_server()
+            else:
+                self.buffer += data.decode("utf-8")
+                while "\n" in self.buffer:
+                    line, self.buffer = self.buffer.split("\n", 1)
+                    # Decode and print the data
+                    gamepad_data = json.loads(line)
+                    self.controller.update(gamepad_data)
+                    msg = String()
+                    msg.data = json.dumps(self.controller.state)
+                    self.publisher_.publish(msg)
+        except socket.error as e:
+            self.get_logger().error(f"Socket error: {e}, reconnecting")
+            self.sock.close()
+            self.connect_to_server()
 
 def main(args=None):
     rclpy.init(args=args)
-
-    
 
     gamepad_node = GamepadNode()
 
