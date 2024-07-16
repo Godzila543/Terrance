@@ -6,6 +6,9 @@
 + `ros2 run py_publisher gamepad` run the gamepad input node
 + `python ./scripts/gamepad_server.py` run the gamepad server
 
++ `sudo -s -E` go sudo without losing context
++ `source ./install/setup.bash` source ros2 stuff
+
 ## Useful Links
 + [Python Pubilsher](https://docs.ros.org/en/iron/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html)
 + [ROS2 Iron Doc](https://docs.ros.org/en/iron/Installation.html)
