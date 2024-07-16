@@ -76,7 +76,7 @@ class GamepadNode(Node):
         self.publisher_ = self.create_publisher(String, 'gamepad', 10)
 
 
-        timer_period = 0.1  # seconds
+        timer_period = 0.05  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
     def timer_callback(self):
