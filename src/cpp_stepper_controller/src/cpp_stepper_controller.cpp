@@ -78,8 +78,10 @@ int main(int argc, char **argv)
     motors[2].updateActivation(current_time);
     motors[3].updateActivation(current_time);
 
-    // Stay high for 1000 us
-    gpioDelay(1000);
+    // Stay high for 10 us
+    // Datasheet states 2 us minimum pulse width for the DRV8825
+    // High for 2 us, low for 2 us.
+    gpioDelay(10);
 
     // Unpulse
     motors[0].deactivate();
@@ -87,8 +89,8 @@ int main(int argc, char **argv)
     motors[2].deactivate();
     motors[3].deactivate();
 
-    // Stay low for 1000 us
-    gpioDelay(1000);
+    // Stay low for 10 us
+    gpioDelay(10);
   }
 
   rclcpp::shutdown();
