@@ -18,7 +18,6 @@ void StepperMotor::setSpeed(float RPM)
         return;
     }
     usStepDelay = 60000000 / (stepsPerRevolution * microstepsPerStep * abs(RPM));
-    // Serial.println(usStepDelay);
     if (RPM < 0)
     {
         digitalWrite(directionPin, HIGH);

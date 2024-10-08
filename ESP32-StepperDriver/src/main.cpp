@@ -13,30 +13,30 @@ I2CSlave i2cSlave(0x08, motors, sizeof(motors) / sizeof(motors[0]));
 
 void setup()
 {
-  // put your setup code here, to run once:
-  Serial.begin(115200);
-  for (auto &motor : motors)
-  {
-    motor.setSpeed(60);
-  }
-  i2cSlave.begin();
+    // put your setup code here, to run once:
+    Serial.begin(115200);
+    for (auto &motor : motors)
+    {
+        motor.setSpeed(60);
+    }
+    i2cSlave.begin();
 }
 
 void loop()
 {
-  long usTime = micros();
-  for (auto &motor : motors)
-  {
-    motor.setSpeed(500 * sin(usTime / 160000.0));
-  }
+    long usTime = micros();
+    for (auto &motor : motors)
+    {
+        motor.setSpeed(100 * sin(usTime / 1060000.0));
+    }
 
-  for (auto &motor : motors)
-  {
-    motor.writePins(usTime);
-  }
-  delayMicroseconds(5);
-  for (auto &motor : motors)
-  {
-    motor.writeLow();
-  }
+    for (auto &motor : motors)
+    {
+        motor.writePins(usTime);
+    }
+    delayMicroseconds(2);
+    for (auto &motor : motors)
+    {
+        motor.writeLow();
+    }
 }
