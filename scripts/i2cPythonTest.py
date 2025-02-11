@@ -15,6 +15,7 @@ if not pi.connected:
 # Open I2C bus 1
 i2c_handle = pi.i2c_open(1, I2C_ADDRESS)
 
+
 def set_motor_rpm(motor_index, rpm):
     """
     Send RPM command to the specified motor index.
@@ -26,11 +27,12 @@ def set_motor_rpm(motor_index, rpm):
         return
 
     # Pack the motor index and RPM into bytes
-    rpm_bytes = struct.pack('f', rpm)
+    rpm_bytes = struct.pack("f", rpm)
     data = [motor_index] + list(rpm_bytes)
 
     # Send the data over I2C
     pi.i2c_write_device(i2c_handle, data)
+
 
 try:
     while True:

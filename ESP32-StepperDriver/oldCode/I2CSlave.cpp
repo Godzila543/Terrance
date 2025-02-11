@@ -21,6 +21,7 @@ void I2CSlave::receiveEvent(int bytes)
         return;
 
     uint8_t motorIndex = Wire.read();
+    Serial.println(motorIndex);
     if (motorIndex >= motorCount)
         return;
 
@@ -34,6 +35,7 @@ void I2CSlave::receiveEvent(int bytes)
     {
         rpmUnion.bytes[i] = Wire.read();
     }
+    Serial.println(rpmUnion.rpm);
 
     motors[motorIndex].setSpeed(rpmUnion.rpm);
 }
