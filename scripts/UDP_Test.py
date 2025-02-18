@@ -19,4 +19,4 @@ while True:
     if i > 100:
         break
 
-    time.sleep(0.1)
+    time.sleep(0.01)
