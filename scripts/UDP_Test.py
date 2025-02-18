@@ -2,6 +2,7 @@
 
 import socket
 import random
+import time
 
 UDP_IP = "192.168.1.101"  # IP address of the Raspberry Pi
 UDP_PORT = 4210
@@ -17,3 +18,5 @@ while True:
     i += 1
     if i > 100:
         break
+
+    time.sleep(0.1)
