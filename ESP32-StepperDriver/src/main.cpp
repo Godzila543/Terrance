@@ -1,49 +1,48 @@
+#include <Arduino.h>
+#include <esp_now.h>
 #include <WiFi.h>
-#include <WiFiUdp.h>
 
-const char *ssid = "SEDS";
-const char *password = "";
+// Callback function that will be executed when data is received
+void OnDataRecv(const uint8_t *mac, const uint8_t *incomingData, int len)
+{
+    // Copy the incoming data to ensure it's properly null-terminated
+    char buffer[250];
+    if (len > 249)
+        len = 249; // Prevent buffer overflow
 
-// UDP configuration
-WiFiUDP udp;
-const unsigned int localUdpPort = 4210; // Local port to listen on
-char incomingPacket[255];
+    memcpy(buffer, incomingData, len);
+    buffer[len] = '\0'; // Ensure null termination
+
+    // Echo the received message back to serial
+    Serial.print("Received: ");
+    Serial.println(buffer);
+}
 
 void setup()
 {
+    // Initialize Serial
     Serial.begin(115200);
-    WiFi.begin(ssid);
 
-    while (WiFi.status() != WL_CONNECTED)
+    // Set device as a Wi-Fi Station
+    WiFi.mode(WIFI_STA);
+
+    // Init ESP-NOW
+    if (esp_now_init() != ESP_OK)
     {
-        delay(500);
-        Serial.print(".");
+        Serial.println("Error initializing ESP-NOW");
+        return;
     }
-    Serial.println("WiFi connected");
-    Serial.println("IP address: ");
-    auto addr = WiFi.localIP(); // Get IP address
-    Serial.println(addr.toString());
 
-    // Start UDP
-    udp.begin(localUdpPort);
-    Serial.print("Listening on UDP port ");
-    Serial.println(localUdpPort);
+    // Register for a callback function that will be called when data is received
+    esp_now_register_recv_cb(OnDataRecv);
+
+    Serial.println("ESP-NOW Listener Ready");
+    Serial.print("MAC Address: ");
+    Serial.println(WiFi.macAddress());
 }
 
 void loop()
 {
-    int packetSize = udp.parsePacket();
-    if (packetSize)
-    {
-        int len = udp.read(incomingPacket, 255);
-        if (len > 0)
-        {
-            incomingPacket[len] = 0;
-        }
-        Serial.print("Received packet: ");
-        Serial.println(incomingPacket);
-
-        // Process command (e.g., update motor RPM, etc.)
-    }
+    // Nothing to do here - ESP-NOW callbacks do all the work
     delay(10);
 }
