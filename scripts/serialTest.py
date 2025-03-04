@@ -12,5 +12,6 @@ if __name__ == "__main__":
         currentTime = time.perf_counter_ns()
         ser.write(str(currentTime).encode())
         response = ser.readline().decode("utf-8").rstrip()
-        print(f"Latency: {(time.perf_counter_ns() - currentTime)/1000} ms")
+        # print(f"Latency: {(time.perf_counter_ns() - currentTime)/1000} ms")
+        print(f"Time: {currentTime}")
         time.sleep(0.5)
