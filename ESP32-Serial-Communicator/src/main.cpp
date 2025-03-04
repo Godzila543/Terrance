@@ -3,12 +3,15 @@
 void setup()
 {
   // put your setup code here, to run once:
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop()
 {
-  Serial.println("Hello from ESP32!"); // prints Hello from ESP32!
-  delay(1000);                         // wait for a second
+  if (Serial.available())
+  {
+    String input = Serial.readStringUntil('\n');
+    Serial.println(input);
+  }
   // put your main code here, to run repeatedly:
 }
