@@ -9,8 +9,8 @@ if __name__ == "__main__":
 
     # Latency test
     while True:
-        currentTime = time.time_ns()
+        currentTime = time.perf_counter_ns()
         ser.write(str(currentTime).encode())
         response = ser.readline().decode("utf-8").rstrip()
-        print(f"Latency: {time.time_ns() - currentTime} ns")
+        print(f"Latency: {(time.perf_counter_ns() - currentTime)/1000} ms")
         time.sleep(0.5)
