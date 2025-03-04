@@ -9,9 +9,16 @@ if __name__ == "__main__":
 
     # Latency test
     while True:
+        # Clear any remaining data in the buffers
+        ser.reset_input_buffer()
+        ser.reset_output_buffer()
+
+        # Add a newline character to ensure proper line termination
         currentTime = time.perf_counter_ns()
-        ser.write(str(currentTime).encode())
+        ser.write(f"{currentTime}\n".encode())
+
         response = ser.readline().decode("utf-8").rstrip()
-        print(f"Latency: {(time.perf_counter_ns() - currentTime)/1e6} ms")
-        # print(f"Time: {currentTime}")
+        latency_ms = (time.perf_counter_ns() - currentTime) / 1e6
+
+        print(f"Latency: {latency_ms:.3f} ms | Response: {response}")
         time.sleep(0.5)
