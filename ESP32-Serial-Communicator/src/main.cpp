@@ -1,82 +1,114 @@
+/*
+ * ESP32 Relay Script
+ * Receives commands from Windows via Serial and relays them to the rover ESP32 using ESP-NOW
+ */
 #include <Arduino.h>
 #include <esp_now.h>
 #include <WiFi.h>
+#include <ArduinoJson.h>
 
-// Structure example to send data
-typedef struct struct_message
+// ESP-NOW peer MAC address (rover ESP32)
+// You need to replace this with your rover ESP32's MAC address
+uint8_t roverMacAddress[] = {0x10, 0x06, 0x1C, 0x41, 0xAC, 0xB8};
+
+// Create a structured object to hold motor RPM values
+typedef struct motor_command
 {
-  char message[250];
-} struct_message;
+  int left_rpm;
+  int right_rpm;
+} motor_command;
 
-// Create a struct_message called myData
-struct_message myData;
-uint8_t broadcastAddress[] = {0x10, 0x06, 0x1C, 0x41, 0xAC, 0xB8};
+// Create a command instance
+motor_command currentCommand;
 
-// Callback when data is sent
+// Buffer for incoming serial data
+String serialBuffer = "";
+
+// Callback function when data is sent
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status)
 {
-  Serial.print("\r\nLast Packet Send Status:\t");
-  Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");
+  if (status == ESP_NOW_SEND_SUCCESS)
+  {
+    Serial.println("{\"status\":\"sent_ok\"}");
+  }
+  else
+  {
+    Serial.println("{\"status\":\"sent_fail\"}");
+  }
 }
 
 void setup()
 {
-  // Initialize Serial Monitor
+  // Initialize Serial for communication with Windows
   Serial.begin(115200);
+  while (!Serial)
+  {
+    ; // Wait for serial port to connect
+  }
 
-  // Print MAC address
-  Serial.print("MAC Address: ");
-  Serial.println(WiFi.macAddress());
-
-  // Set device as a Wi-Fi Station
+  // Initialize ESP-NOW
   WiFi.mode(WIFI_STA);
 
-  // Init ESP-NOW
   if (esp_now_init() != ESP_OK)
   {
-    Serial.println("Error initializing ESP-NOW");
+    Serial.println("{\"error\":\"ESP-NOW init failed\"}");
     return;
   }
 
-  // Once ESPNow is successfully Init, we will register for Send CB to
-  // get the status of Transmitted packet
+  // Register the send callback
   esp_now_register_send_cb(OnDataSent);
 
-  // Register peer
-  esp_now_peer_info_t peerInfo;
-  memset(&peerInfo, 0, sizeof(peerInfo));
-  // Set MAC address of the peer (replace with your peer's MAC address)
-  memcpy(peerInfo.peer_addr, broadcastAddress, 6);
+  // Register the rover ESP32 as a peer
+  esp_now_peer_info_t peerInfo = {};
+  memcpy(peerInfo.peer_addr, roverMacAddress, 6);
   peerInfo.channel = 0;
   peerInfo.encrypt = false;
 
-  // Add peer
   if (esp_now_add_peer(&peerInfo) != ESP_OK)
   {
-    Serial.println("Failed to add peer");
+    Serial.println("{\"error\":\"Failed to add peer\"}");
     return;
   }
+
+  Serial.println("{\"status\":\"ready\"}");
 }
 
 void loop()
 {
-  if (Serial.available())
+  // Read incoming serial data
+  while (Serial.available())
   {
-    String input = Serial.readStringUntil('\n');
-    input.toCharArray(myData.message, 250);
-    Serial.println(input);
+    char c = Serial.read();
+    serialBuffer += c;
 
-    // Send message via ESP-NOW
-    esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *)&myData, sizeof(myData));
+    // Process messages terminated by newline
+    if (c == '\n')
+    {
+      // Parse the JSON command
+      DynamicJsonDocument doc(64);
+      DeserializationError error = deserializeJson(doc, serialBuffer);
 
-    if (result == ESP_OK)
-    {
-      Serial.println("Sent with success");
-    }
-    else
-    {
-      Serial.println("Error sending the data");
+      if (!error)
+      {
+        // Extract command values
+        currentCommand.left_rpm = doc["left_rpm"];
+        currentCommand.right_rpm = doc["right_rpm"];
+
+        // Send command to rover ESP32 via ESP-NOW
+        esp_err_t result = esp_now_send(roverMacAddress, (uint8_t *)&currentCommand, sizeof(currentCommand));
+
+        if (result != ESP_OK)
+        {
+          Serial.println("{\"error\":\"Failed to send command\"}");
+        }
+      }
+      else
+      {
+        Serial.println("{\"error\":\"JSON parsing failed\"}");
+      }
+
+      // Clear the buffer for the next command
+      serialBuffer = "";
     }
   }
-  // put your main code here, to run repeatedly:
 }
