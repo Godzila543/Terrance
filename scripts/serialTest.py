@@ -21,4 +21,8 @@ if __name__ == "__main__":
         latency_ms = (time.perf_counter_ns() - currentTime) / 1e6
 
         print(f"Latency: {latency_ms:.3f} ms | Response: {response}")
+
+        response = ser.readline().decode("utf-8").rstrip()
+        if response:
+            print(f"Response: {response}")
         time.sleep(0.5)
